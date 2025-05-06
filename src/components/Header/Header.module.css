@@ -10,12 +10,10 @@
     padding: 1rem 2rem;
     margin: 1rem auto;
     max-width: 1200px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--color-text);
-
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -23,7 +21,6 @@
     border-color: rgba(138, 43, 226, 0.5);
     box-shadow: 0 0 0 2px rgba(138, 43, 226, 0.1);
 }
-
 
 .logo {
     font-size: 1.5rem;
