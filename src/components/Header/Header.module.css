@@ -47,3 +47,13 @@
 .nav a:hover {
     color: var(--color-primary);
 }
+
+.code-icon {
+    background: var(--color-surface);
+    color: var(--color-primary);
+    padding: 0.3rem 0.6rem;
+    border-radius: 6px;
+    font-family: monospace;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

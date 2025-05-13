@@ -7,12 +7,75 @@
     color: var(--color-text);
 }
 
+section {
+    padding-block: 4rem;
+
+}
+
 .intro {
     padding: 2rem;
     margin-bottom: 2rem;
-    text-align: center;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.introContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.imgDev {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    flex-shrink: 0;
+}
+
+.imgDev img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.textContent {
     max-width: 700px;
     width: 100%;
+    text-align: center;
+}
+
+.description {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.cta {
+    color: var(--color-primary);
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.highlight {
+    color: var(--color-primary);
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .introContainer {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .textContent {
+        text-align: left;
+    }
 }
 
 .highlight {
