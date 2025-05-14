@@ -7,6 +7,9 @@ export default function Footer() {
             <p>
                 Desenvolvido por <strong>José Segura</strong> • © {new Date().getFullYear()}
             </p>
+            <p>
+                Projeto desenvolvido utilizando <strong>React</strong> com <strong>JavaScript</strong> e <strong>Vite</strong>.
+            </p>
             <div className={styles.links}>
                 <a href="https://github.com/GKsegura" target="_blank" rel="noopener noreferrer">
                     <FaGithub className={styles.icon} /> GitHub
