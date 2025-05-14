@@ -1,6 +1,7 @@
 import ProjetoCard from './ProjetoCard';
 import styles from './Projetos.module.css';
 
+
 const ProjetosData = [
     {
         id: 1,

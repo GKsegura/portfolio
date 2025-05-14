@@ -8,6 +8,7 @@ const Sobre = () => {
                     <div className={styles.imgDev}>
                         <img src="https://github.com/GKsegura.png" alt="Foto de perfil do José Segura" />
                     </div>
+
                     <div className={styles.textContent}>
                         <h1>
                             Olá, eu sou o <span className={styles.highlight}>José Segura</span> 👨‍💻

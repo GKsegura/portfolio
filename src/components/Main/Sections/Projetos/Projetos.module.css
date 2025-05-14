@@ -1,9 +1,9 @@
 .projetos {
     border-radius: var(--radius);
     padding: 2rem;
-    backdrop-filter: blur(var(--blur));
-    -webkit-backdrop-filter: blur(var(--blur));
-    box-shadow: var(--shadow);
+    /* backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur)); */
+    /* box-shadow: var(--shadow); */
     width: 100%;
     max-width: 1000px;
     margin: auto;
@@ -100,7 +100,6 @@
     background: var(--color-primary-hover);
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
     .projetoConteudo {
         flex-direction: column;
@@ -111,4 +110,13 @@
     .projetoInfo {
         text-align: center;
     }
+
+    .languages {
+        justify-content: center;
+    }
+
+    /* .projetoImagem img {
+        width: 100%;
+        max-width: 200px;
+    } */
 }
