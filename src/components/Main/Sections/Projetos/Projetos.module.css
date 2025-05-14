@@ -1,6 +1,4 @@
 .projetos {
-    /* background: var(--color-surface); */
-    /* border: 1px solid var(--color-surface-border); */
     border-radius: var(--radius);
     padding: 2rem;
     backdrop-filter: blur(var(--blur));
@@ -24,10 +22,11 @@
 }
 
 .projeto {
-
     background: var(--color-surface);
     border: 1px solid var(--color-surface-border);
     padding: 2rem;
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
     border-radius: var(--radius);
     box-shadow: var(--shadow-small);
     display: flex;
