@@ -53,15 +53,15 @@ button {
     border-radius: var(--radius);
     cursor: pointer;
     transition: background 0.2s ease-in-out;
-}
 
-button:hover {
-    background: var(--color-secondary);
-}
+    &:hover {
+        background: var(--color-secondary);
+    }
 
-button:focus-visible {
-    outline: 2px solid var(--color-secondary);
-    outline-offset: 2px;
+    &:focus-visible {
+        outline: 2px solid var(--color-secondary);
+        outline-offset: 2px;
+    }
 }
 
 /* Cabeçalhos */

@@ -1,18 +1,15 @@
 .projetos {
     border-radius: var(--radius);
     padding: 2rem;
-    /* backdrop-filter: blur(var(--blur));
-    -webkit-backdrop-filter: blur(var(--blur)); */
-    /* box-shadow: var(--shadow); */
     width: 100%;
     max-width: 1000px;
     margin: auto;
     text-align: center;
-}
 
-.projetos h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 .projetosContainer {
@@ -34,15 +31,29 @@
     align-items: center;
     gap: 2rem;
     transition: transform 0.3s ease;
-}
 
-.projeto:hover {
-    transform: scale(1.02);
-}
+    &:hover {
+        transform: scale(1.02);
+    }
 
-.projeto h3 {
-    font-size: 1.8rem;
-    margin: 0;
+    h3 {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+
+    a {
+        margin-top: 1.5rem;
+        background: var(--color-primary);
+        color: white;
+        padding: 0.6rem 1.2rem;
+        border-radius: var(--radius);
+        text-decoration: none;
+        transition: background 0.3s ease;
+
+        &:hover {
+            background: var(--color-primary-hover);
+        }
+    }
 }
 
 .projetoConteudo {
@@ -62,11 +73,11 @@
     flex: 1;
     text-align: left;
     max-width: 500px;
-}
 
-.projetoInfo p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
+    p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
 }
 
 .languages {
@@ -76,29 +87,17 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+
+    li {
+        background-color: var(--color-surface-border);
+        color: var(--color-text);
+        padding: 0.3rem 0.6rem;
+        border-radius: 999px;
+        font-size: 0.8rem;
+    }
 }
 
-.languages li {
-    background-color: var(--color-surface-border);
-    color: var(--color-text);
-    padding: 0.3rem 0.6rem;
-    border-radius: 999px;
-    font-size: 0.8rem;
-}
 
-.projeto a {
-    margin-top: 1.5rem;
-    background: var(--color-primary);
-    color: white;
-    padding: 0.6rem 1.2rem;
-    border-radius: var(--radius);
-    text-decoration: none;
-    transition: background 0.3s ease;
-}
-
-.projeto a:hover {
-    background: var(--color-primary-hover);
-}
 
 @media (max-width: 768px) {
     .projetoConteudo {
@@ -114,9 +113,4 @@
     .languages {
         justify-content: center;
     }
-
-    /* .projetoImagem img {
-        width: 100%;
-        max-width: 200px;
-    } */
 }
