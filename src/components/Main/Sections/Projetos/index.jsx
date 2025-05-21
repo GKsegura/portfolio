@@ -2,7 +2,6 @@ import ProjetoCard from './ProjetoCard';
 import styles from './Projetos.module.css';
 
 import ecotube from '/assets/ecotube.png';
-import hortaInteligente from '/assets/horta-inteligente.jpg';
 import igniteTimer from '/assets/ignite-timer.png';
 import qinvest from '/assets/qinvest.png';
 import todo from '/assets/todo.png';
@@ -39,14 +38,6 @@ const ProjetosData = [
         link: 'https://github.com/GKsegura/todo-app-ts',
         image: todo,
         languages: ['React', 'TypeScript', 'JavaScript', 'CSS'],
-    },
-    {
-        id: 5,
-        title: 'horta inteligente',
-        description: 'Horta Inteligente com Arduino Projeto de automação para cultivo com sensor de umidade do solo, display LCD para monitoramento em tempo real e controle automático da irrigação via relé e bomba d’água.',
-        link: 'https://github.com/GKsegura/horta-inteligente',
-        image: hortaInteligente,
-        languages: ['Arduino', 'C++'],
     }
 ]
 
