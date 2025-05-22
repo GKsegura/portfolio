@@ -39,19 +39,28 @@
     h3 {
         font-size: 1.8rem;
         margin: 0;
+        filter: drop-shadow(0 3px 10px rgba(169, 112, 255, 0.3));
+
     }
 
     a {
         margin-top: 1.5rem;
         background: var(--color-primary);
-        color: white;
-        padding: 0.6rem 1.2rem;
+        color: var(--color-text);
+        padding: 0.7rem 1.6rem;
         border-radius: var(--radius);
         text-decoration: none;
-        transition: background 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        font-weight: 500;
+        box-shadow: 0 3px 10px rgba(169, 112, 255, 0.3);
+        transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 
         &:hover {
-            background: var(--color-primary-hover);
+            background: var(--color-secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(179, 136, 255, 0.4);
         }
     }
 }

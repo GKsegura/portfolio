@@ -4,6 +4,7 @@ import styles from './Projetos.module.css';
 import ecotube from '/assets/ecotube.png';
 import igniteTimer from '/assets/ignite-timer.png';
 import qinvest from '/assets/qinvest.png';
+import repositorio from '/assets/repositorio.png';
 import todo from '/assets/todo.png';
 
 const ProjetosData = [
@@ -17,6 +18,14 @@ const ProjetosData = [
     },
     {
         id: 2,
+        title: 'Repositório',
+        description: 'Esse site que você está vendo!',
+        link: '',
+        image: repositorio,
+        languages: ['React', 'JavaScript', 'CSS'],
+    },
+    {
+        id: 3,
         title: 'EcoTube',
         description: 'E-commerce de canudos de vidro desenvolvido durante o segundo ano do curso de técnico em informática. Inclui funcionalidades como carrinho de compras, login de usuário e painel administrativo.',
         link: 'https://github.com/GKsegura/EcoTube',
@@ -24,7 +33,7 @@ const ProjetosData = [
         languages: ['PHP', 'CSS', 'JavaScript', 'PostgreSQL'],
     },
     {
-        id: 3,
+        id: 4,
         title: 'ignite-timer',
         description: 'Aplicativo pomodoro. Inclui cronômetro, timer e histórico de atividades. Projeto desenvolvido durante o curso de ReactJS da Rocketseat.',
         link: 'https://github.com/GKsegura/ignite-timer',
@@ -32,7 +41,7 @@ const ProjetosData = [
         languages: ['React', 'TypeScript', 'JavaScript', 'CSS'],
     },
     {
-        id: 4,
+        id: 5,
         title: 'todo-app-ts',
         description: 'Aplicativo de gerenciamento de tarefas, desenvolvido com React e TypeScript, com foco em produtividade e uma interface limpa. Funcionalidades: Adicionar e deletar tarefas. UI moderna e responsiva e com gerenciamento de estado React Hooks',
         link: 'https://github.com/GKsegura/todo-app-ts',

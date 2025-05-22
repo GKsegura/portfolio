@@ -1,3 +1,4 @@
+import { FaGithub } from 'react-icons/fa';
 import styles from './Projetos.module.css';
 
 const ProjetoCard = ({ projeto }) => {
@@ -26,6 +27,7 @@ const ProjetoCard = ({ projeto }) => {
                 rel="noopener noreferrer"
                 className={styles.botao}
             >
+                <FaGithub className={styles.icon} />
                 Ver projeto
             </a>
         </div>
