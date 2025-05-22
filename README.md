@@ -27,7 +27,7 @@ Construído com **React** + **Vite**, o site foi pensado para ter uma performanc
 Se quiser trocar uma ideia, colaborar ou oferecer um freela:
 
 - Email: **jose.segura.ms@gmail.com**
-- LinkedIn: [linkedin.com/in/seuperfil](https://www.linkedin.com/in/jose-a-segura-m-da-silva/)
+- LinkedIn: [linkedin.com/in/jose-a-segura-m-da-silva](https://www.linkedin.com/in/jose-a-segura-m-da-silva/)
 - Instagram: [@\_jose.segura](https://www.instagram.com/_jose.segura/)
 
 ---
