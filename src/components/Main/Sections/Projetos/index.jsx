@@ -20,7 +20,7 @@ const ProjetosData = [
         id: 2,
         title: 'Repositório',
         description: 'Esse site que você está vendo!',
-        link: 'https://github.com/GKsegura/',
+        link: 'https://github.com/GKsegura/repositorio-gksegura',
         image: repositorio,
         languages: ['React', 'JavaScript', 'CSS'],
     },
