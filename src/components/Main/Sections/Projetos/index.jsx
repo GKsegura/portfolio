@@ -14,7 +14,7 @@ const ProjetosData = [
         description: 'Plataforma de educação financeira voltada para jovens. Inclui gráficos de ações em tempo real, questionário de perfil investidor e indicações de investimentos personalizadas. Trabalho de conclusão de curso (TCC) desenvolvido no terceiro ano do curso de técnico em informática.',
         link: 'https://github.com/GKsegura/qinvest-web',
         image: qinvest,
-        languages: ['Laravel', 'JavaScript', 'CSS', 'PostgreSQL', 'Node.js'],
+        languages: ['Laravel', 'JavaScript', 'CSS', 'PostgreSQL', 'Node'],
     },
     {
         id: 2,

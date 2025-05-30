@@ -1,6 +1,21 @@
 import { FaGithub } from 'react-icons/fa';
 import styles from './Projetos.module.css';
 
+const languages = {
+    javascript: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+    react: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+    java: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg',
+    php: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg',
+    laravel: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg',
+    csharp: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
+    postgresql: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg',
+    mysql: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg',
+    typescript: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg',
+    css: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
+    html: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
+    node: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
+};
+
 const ProjetoCard = ({ projeto }) => {
     return (
         <div className={styles.projeto}>
@@ -15,7 +30,16 @@ const ProjetoCard = ({ projeto }) => {
                     <p>{projeto.description}</p>
                     <ul className={styles.languages}>
                         {projeto.languages.map((tec, index) => (
-                            <li key={index}>{tec}</li>
+                            <li
+                                key={index}>
+
+                                {languages[tec.toLowerCase()] && (
+                                    <img src={languages[tec.toLowerCase()]} alt={tec} />
+                                )}
+
+
+                                {tec}
+                            </li>
                         ))}
                     </ul>
                 </div>
