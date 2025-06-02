@@ -13,7 +13,7 @@ const Sobre = () => {
                             Olá, eu sou o <span className={styles.highlight}>José Segura</span> 👨‍💻
                         </h1>
                         <p className={styles.description}>
-                            <strong>Desenvolvedor full-stack e freelancer</strong>, apaixonado por transformar ideias em soluções web modernas, rápidas e funcionais.<br /><br />
+                            <strong>Desenvolvedor full-stack e freelancer</strong>.<br /><br />
                             Tenho experiência prática com <strong>JavaScript, React, Java, PHP (Laravel), C#, PostgreSQL e MySQL</strong>. Já desenvolvi <strong>e-commerces, plataformas de investimentos e sistemas com dashboards interativos</strong> consumindo APIs e renderizando gráficos em tempo real.<br /><br />
                             Gosto de <strong>trabalhar em equipe, resolver problemas complexos</strong> e aplicar criatividade em cada entrega. Curto desafios, curto código limpo e curto ver projetos ganhando vida!<br /><br />
                             Mas o que me move mesmo é o <strong>desenvolvimento web</strong>. Se você tem uma ideia ou precisa dar um gás no seu sistema, <span className={styles.cta}> <a href="#contato">me chama e bora construir algo incrível!</a></span>
