@@ -57,18 +57,7 @@
     font-weight: bold;
 }
 
-/* Responsividade */
-@media (min-width: 768px) {
-    .introContainer {
-        flex-direction: row;
-        align-items: flex-start;
-        text-align: left;
-    }
 
-    .textContent {
-        text-align: left;
-    }
-}
 
 .tecnologias {
     width: 100%;
@@ -105,5 +94,18 @@
                 transform: scale(1.2);
             }
         }
+    }
+}
+
+/* Responsividade */
+@media (min-width: 768px) {
+    .introContainer {
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .textContent {
+        text-align: left;
     }
 }

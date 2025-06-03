@@ -14,6 +14,8 @@ const languages = {
     css: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
     html: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg',
     node: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg',
+    springboot: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg',
+    maven: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/maven/maven-original.svg',
 };
 
 const ProjetoCard = ({ projeto }) => {
@@ -32,12 +34,9 @@ const ProjetoCard = ({ projeto }) => {
                         {projeto.languages.map((tec, index) => (
                             <li
                                 key={index}>
-
-                                {languages[tec.toLowerCase()] && (
-                                    <img src={languages[tec.toLowerCase()]} alt={tec} />
+                                {languages[tec.toLowerCase().replace(/\s+/g, '')] && (
+                                    <img src={languages[tec.toLowerCase().replace(/\s+/g, '')]} alt={tec} />
                                 )}
-
-
                                 {tec}
                             </li>
                         ))}
