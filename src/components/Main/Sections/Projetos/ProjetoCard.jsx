@@ -1,3 +1,4 @@
+import React from 'react';
 import { FaGithub } from 'react-icons/fa';
 import styles from './Projetos.module.css';
 
@@ -27,7 +28,15 @@ const ProjetoCard = ({ projeto }) => {
                     <img src={projeto.image} alt={projeto.title} />
                 </div>
                 <div className={styles.projetoInfo}>
-                    <p>{projeto.description}</p>
+                    <p>
+                        {projeto.description.split('\n').map((line, index) => (
+                            <React.Fragment key={index}>
+                                {line}
+                                <br />
+                            </React.Fragment>
+                        ))}
+                    </p>
+                    {projeto.year && <small className={styles.year}>Desenvolvido em: {projeto.year}</small>}
                     {projeto.stack && (
                         <span className={styles.stack}>
                             <strong>

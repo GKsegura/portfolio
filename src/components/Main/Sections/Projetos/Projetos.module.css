@@ -139,6 +139,17 @@
     width: fit-content;
 }
 
+.year {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-primary);
+    font-weight: 600;
+    font-style: italic;
+    filter: drop-shadow(0 1px 1px rgba(169, 112, 255, 0.25));
+}
+
+
 @media (max-width: 768px) {
     .projetoConteudo {
         flex-direction: column;

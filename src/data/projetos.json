@@ -2,55 +2,51 @@
   {
     "id": 1,
     "title": "QInvest",
-    "description": "Plataforma de educação financeira voltada para jovens. Inclui gráficos de ações em tempo real, questionário de perfil investidor e indicações de investimentos personalizadas. Trabalho de conclusão de curso (TCC) desenvolvido no terceiro ano do curso de técnico em informática.",
+    "description": "QInvest é uma aplicação web fullstack desenvolvida como Trabalho de Conclusão de Curso (TCC) do Técnico em Informática (2023). O projeto tem como objetivo auxiliar no controle e planejamento de investimentos financeiros, oferecendo uma interface moderna e funcional. \n Atuei como líder técnico do grupo, sendo responsável pelas principais decisões arquiteturais, organização do time e integração das tecnologias. Além disso, participei ativamente como desenvolvedor full stack, construindo tanto a estrutura de backend (Laravel) quanto o frontend (Vite).",
     "link": "https://github.com/GKsegura/qinvest-web",
     "image": "/assets/qinvest.png",
     "languages": ["Laravel", "JavaScript", "CSS", "PostgreSQL", "Node"],
-    "stack": "Full Stack"
+    "stack": "Full Stack",
+    "year": 2023
   },
   {
     "id": 2,
     "title": "Pessoa API",
-    "description": "API RESTful desenvolvida com Java e Spring Boot para cadastro, listagem, atualização e remoção de pessoas. Utiliza MySQL como banco de dados relacional, JPA para persistência e boas práticas de arquitetura REST. Ideal para estudos de backend e integração com front-ends modernos.",
+    "description": "API RESTful desenvolvida em Java com Spring Boot, com o objetivo de praticar os fundamentos da construção de APIs modernas. \nO projeto implementa operações CRUD para entidades do tipo “Pessoa”, seguindo boas práticas com camadas bem definidas, integração com banco de dados via JPA e tratamento adequado de exceções.",
     "link": "https://github.com/GKsegura/pessoa-api",
     "image": "/assets/pessoa-api.png",
     "languages": ["Java", "Spring Boot", "MySQL", "Maven"],
-    "stack": "Back-end"
+    "stack": "Back-end",
+    "year": 2025
   },
   {
     "id": 3,
-    "title": "Repositório GKsegura",
-    "description": "Esse site que você está vendo!",
+    "title": "Portfólio GKsegura",
+    "description": "Este repositório serve como portfólio principal de projetos desenvolvidos por mim.\nAqui você encontra aplicações web completas, APIs RESTful e experimentações que demonstram minha evolução como desenvolvedor.\nMeus projetos são focados em boas práticas de código, clareza arquitetural e, sempre que possível, uma pitada de criatividade. 👨‍💻✨",
     "link": "https://github.com/GKsegura/repositorio-gksegura",
     "image": "/assets/repositorio.png",
     "languages": ["React", "JavaScript", "CSS"],
-    "stack": "Front-end"
+    "stack": "Front-end",
+    "year": 2025
   },
   {
     "id": 4,
     "title": "EcoTube",
-    "description": "E-commerce de canudos de vidro desenvolvido durante o segundo ano do curso de técnico em informática. Inclui funcionalidades como carrinho de compras, login de usuário e painel administrativo.",
+    "description": "EcoTube é um e-commerce de canudos de vidro sustentáveis, criado com o objetivo de promover o consumo consciente através da tecnologia.\nA plataforma permite a navegação por produtos, exibição de detalhes, adição ao carrinho e simula a jornada de compra de forma intuitiva.\nO projeto foi desenvolvido com foco na usabilidade, componentização e um visual limpo e funcional — alinhando propósito ecológico e boa experiência do usuário. 🥤🌱",
     "link": "https://github.com/GKsegura/EcoTube",
     "image": "/assets/ecotube.png",
     "languages": ["PHP", "CSS", "JavaScript", "PostgreSQL"],
-    "stack": "Full Stack"
+    "stack": "Full Stack",
+    "year": 2022
   },
   {
     "id": 5,
-    "title": "ignite-timer",
-    "description": "Aplicativo pomodoro. Inclui cronômetro, timer e histórico de atividades. Projeto desenvolvido durante o curso de ReactJS da Rocketseat.",
-    "link": "https://github.com/GKsegura/ignite-timer",
-    "image": "/assets/ignite-timer.png",
-    "languages": ["React", "TypeScript", "JavaScript", "CSS"],
-    "stack": "Front-end"
-  },
-  {
-    "id": 6,
     "title": "todo-app-ts",
-    "description": "Aplicativo de gerenciamento de tarefas, desenvolvido com React e TypeScript, com foco em produtividade e uma interface limpa. Funcionalidades: Adicionar e deletar tarefas. UI moderna e responsiva e com gerenciamento de estado React Hooks",
+    "description": "Aplicação de lista de tarefas (To-Do List) desenvolvida em React com TypeScript, criada como desafio prático do curso de React da Rocketseat.\nO projeto foca em boas práticas de desenvolvimento front-end, tipagem estática e componentes reutilizáveis, com funcionalidades para adicionar, marcar como concluída e remover tarefas.\nIdeal para quem quer entender a combinação React + TypeScript em um app real e leve.",
     "link": "https://github.com/GKsegura/todo-app-ts",
     "image": "/assets/todo.png",
     "languages": ["React", "TypeScript", "JavaScript", "CSS"],
-    "stack": "Front-end"
+    "stack": "Front-end",
+    "year": 2025
   }
 ]
