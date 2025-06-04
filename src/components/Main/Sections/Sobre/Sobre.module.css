@@ -17,8 +17,14 @@
     height: 160px;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     flex-shrink: 0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+        box-shadow: 0 0 15px rgb(0, 0, 0);
+        transform: rotate(-4deg);
+    }
 
     img {
         width: 100%;

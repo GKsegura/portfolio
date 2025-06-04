@@ -22,28 +22,48 @@ const ProjetoCard = ({ projeto }) => {
     return (
         <div className={styles.projeto}>
             <h3>{projeto.title}</h3>
-
             <div className={styles.projetoConteudo}>
                 <div className={styles.projetoImagem}>
                     <img src={projeto.image} alt={projeto.title} />
                 </div>
-
                 <div className={styles.projetoInfo}>
                     <p>{projeto.description}</p>
+                    {projeto.stack && (
+                        <span className={styles.stack}>
+                            <strong>
+                                {projeto.stack.toLowerCase() === 'full stack'
+                                    ? '🌐'
+                                    : projeto.stack.toLowerCase() === 'front-end'
+                                        ? '💻'
+                                        : projeto.stack.toLowerCase() === 'back-end'
+                                            ? '⚙️'
+                                            : '📦'}
+                                {' Stack:'}
+                            </strong>{' '}
+                            {projeto.stack}
+                        </span>
+                    )}
                     <ul className={styles.languages}>
-                        {projeto.languages.map((tec, index) => (
-                            <li
-                                key={index}>
-                                {languages[tec.toLowerCase().replace(/\s+/g, '')] && (
-                                    <img src={languages[tec.toLowerCase().replace(/\s+/g, '')]} alt={tec} />
-                                )}
-                                {tec}
-                            </li>
-                        ))}
+                        {projeto.languages.map((tec, index) => {
+                            const normalizedKey = tec.toLowerCase().replace(/\s+/g, '');
+                            const iconUrl = languages[normalizedKey];
+                            return (
+                                <li key={index}>
+                                    {iconUrl && (
+                                        <img
+                                            src={iconUrl}
+                                            alt={tec}
+                                            onError={(e) => (e.target.style.display = 'none')}
+                                        />
+                                    )}
+                                    {tec}
+                                </li>
+                            );
+                        })}
                     </ul>
                 </div>
-            </div>
 
+            </div>
             <a
                 href={projeto.link}
                 target="_blank"

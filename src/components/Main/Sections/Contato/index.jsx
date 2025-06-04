@@ -3,7 +3,7 @@ import styles from './Contato.module.css';
 
 const Contato = () => {
     const phone = '5514988198485';
-    const message = 'Olá José! Vi seu portfólio e gostaria de conversar.';
+    const message = 'Olá, José! Vi seu portfólio e gostaria de conversar!';
     const whatsappLink = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
     return (

@@ -12,10 +12,10 @@
     align-items: center;
     gap: 1rem;
     box-shadow: var(--shadow);
-}
 
-.footer p {
-    margin: 0;
+    p {
+        margin: 0;
+    }
 }
 
 .links {
@@ -23,22 +23,21 @@
     gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
-}
 
-.links a {
-    color: var(--color-primary);
-    text-decoration: none;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 0.3rem;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
+    a {
+        color: var(--color-primary);
+        text-decoration: none;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        transition: color 0.3s ease, transform 0.3s ease;
 
-.links a:hover {
-    color: var(--color-secondary);
-    text-decoration: underline;
-    transform: scale(1.05);
+        &:hover {
+            color: var(--color-secondary);
+            transform: scale(1.05);
+        }
+    }
 }
 
 .icon {

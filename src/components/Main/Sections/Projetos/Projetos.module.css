@@ -126,8 +126,18 @@
     }
 }
 
-
-
+.stack {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: rgba(169, 112, 255, 0.1);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    width: fit-content;
+}
 
 @media (max-width: 768px) {
     .projetoConteudo {
