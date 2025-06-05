@@ -12,42 +12,38 @@
     gap: 2rem;
     transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 
-
-    &:hover {
-        transform: translateY(-5px);
-        background-color: rgba(0, 0, 0, 0.3);
-        box-shadow: 0 8px 24px rgba(169, 112, 255, 0.3);
-
-        .left #projetoImage {
-            border: 1px solid var(--color-primary);
-            box-shadow: 0 4px 12px rgba(169, 112, 255, 0.4);
-        }
-    }
-
     h3 {
         font-size: 1.8rem;
         margin: 8px 0 0 0;
         filter: drop-shadow(0 3px 10px rgba(169, 112, 255, 0.3));
     }
 
-    a {
-        margin-top: 1.5rem;
-        background: var(--color-primary);
-        color: var(--color-text);
-        padding: 0.7rem 1.6rem;
-        border-radius: var(--radius);
-        text-decoration: none;
-        display: inline-flex;
+    .linkContainer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
         align-items: center;
-        gap: 0.5rem;
-        font-weight: 500;
-        box-shadow: 0 3px 10px rgba(169, 112, 255, 0.3);
-        transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+        justify-content: center;
 
-        &:hover {
-            background: var(--color-secondary);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(179, 136, 255, 0.4);
+        .link {
+            background: var(--color-primary);
+            color: var(--color-text);
+            padding: 0.6rem 1.2rem;
+            border-radius: var(--radius);
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-weight: 500;
+            box-shadow: 0 3px 10px rgba(169, 112, 255, 0.3);
+            transition: background 0.3s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+            border: 1px solid transparent;
+
+            &:hover {
+                background: var(--color-primary-hover);
+                border: 1px solid var(--color-primary);
+                box-shadow: 0 4px 12px rgba(179, 136, 255, 0.4);
+            }
         }
     }
 }
@@ -63,6 +59,11 @@
 .left {
     max-width: 282px;
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
     #projetoImage {
         width: 100%;
         border-radius: 8px;
@@ -74,10 +75,20 @@
 .right {
     flex: 1;
     text-align: justify;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
 
     p {
         font-size: 1rem;
-        margin-bottom: 1rem;
+    }
+
+    .stackContainer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -112,7 +123,7 @@
 
 .stack {
     display: inline-block;
-    margin-top: 0.5rem;
+    margin: 1rem 0;
     padding: 0.4rem 0.8rem;
     border-radius: 20px;
     font-size: 0.8rem;

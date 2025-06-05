@@ -57,23 +57,26 @@ const ProjetoCard = ({ projeto }) => {
                             </React.Fragment>
                         ))}
                     </p>
-                    {projeto.stack && (
-                        <span className={styles.stack}>
-                            <strong>{getStackEmoji(projeto.stack)} Stack:</strong>{' '}{projeto.stack}
-                        </span>
-                    )}
+                    <div className={styles.stackContainer}>
+                        {projeto.stack && (
+                            <span className={styles.stack}>
+                                <strong>{getStackEmoji(projeto.stack)} Stack:</strong>{' '}{projeto.stack}
+                            </span>
+                        )}
+                    </div>
+                    <div className={styles.linkContainer}>
+                        <a
+                            href={projeto.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className={styles.link}
+                        >
+                            <FaGithub className={styles.icon} />
+                            Ver projeto
+                        </a>
+                    </div>
                 </div>
             </div>
-            {/* FOOTER */}
-            <a
-                href={projeto.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.botao}
-            >
-                <FaGithub className={styles.icon} />
-                Ver projeto
-            </a>
         </div>
     );
 };
