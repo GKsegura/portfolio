@@ -7,7 +7,8 @@
     "image": "/assets/qinvest.png",
     "languages": ["Laravel", "JavaScript", "CSS", "PostgreSQL", "Node"],
     "stack": "Full Stack",
-    "year": 2023
+    "year": 2023,
+    "status": "Concluído"
   },
   {
     "id": 2,
@@ -17,27 +18,30 @@
     "image": "/assets/pessoa-api.png",
     "languages": ["Java", "Spring Boot", "MySQL", "Maven"],
     "stack": "Back-end",
-    "year": 2025
+    "year": 2025,
+    "status": "Em desenvolvimento"
   },
   {
     "id": 3,
     "title": "Portfólio GKsegura",
-    "description": "Este repositório serve como portfólio principal de projetos desenvolvidos por mim.\nAqui você encontra aplicações web completas, APIs RESTful e experimentações que demonstram minha evolução como desenvolvedor.\nMeus projetos são focados em boas práticas de código, clareza arquitetural e, sempre que possível, uma pitada de criatividade. 👨‍💻✨",
+    "description": "Este repositório serve como portfólio principal de projetos desenvolvidos por mim.\nAqui você encontra aplicações web completas, APIs RESTful e experimentações que demonstram minha evolução como desenvolvedor.\nMeus projetos são focados em boas práticas de código, clareza arquitetural e, sempre que possível, uma pitada de criatividade.",
     "link": "https://github.com/GKsegura/repositorio-gksegura",
     "image": "/assets/repositorio.png",
     "languages": ["React", "JavaScript", "CSS"],
     "stack": "Front-end",
-    "year": 2025
+    "year": 2025,
+    "status": "Em desenvolvimento"
   },
   {
     "id": 4,
     "title": "EcoTube",
-    "description": "EcoTube é um e-commerce de canudos de vidro sustentáveis, criado com o objetivo de promover o consumo consciente através da tecnologia.\nA plataforma permite a navegação por produtos, exibição de detalhes, adição ao carrinho e simula a jornada de compra de forma intuitiva.\nO projeto foi desenvolvido com foco na usabilidade, componentização e um visual limpo e funcional — alinhando propósito ecológico e boa experiência do usuário. 🥤🌱",
+    "description": "EcoTube é um e-commerce de canudos de vidro sustentáveis, criado com o objetivo de promover o consumo consciente através da tecnologia.\nA plataforma permite a navegação por produtos, exibição de detalhes, adição ao carrinho e simula a jornada de compra de forma intuitiva.\nO projeto foi desenvolvido com foco na usabilidade, componentização e um visual limpo e funcional — alinhando propósito ecológico e boa experiência do usuário.",
     "link": "https://github.com/GKsegura/EcoTube",
     "image": "/assets/ecotube.png",
     "languages": ["PHP", "CSS", "JavaScript", "PostgreSQL"],
     "stack": "Full Stack",
-    "year": 2022
+    "year": 2022,
+    "status": "Concluído"
   },
   {
     "id": 5,
@@ -47,6 +51,7 @@
     "image": "/assets/todo.png",
     "languages": ["React", "TypeScript", "JavaScript", "CSS"],
     "stack": "Front-end",
-    "year": 2025
+    "year": 2025,
+    "status": "Concluído"
   }
 ]
