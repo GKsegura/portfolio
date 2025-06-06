@@ -1,4 +1,5 @@
 import styles from './Sobre.module.css';
+const urlTechnologies = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/';
 
 const Sobre = () => {
     return (
@@ -27,14 +28,14 @@ const Sobre = () => {
                     Aqui estão algumas das tecnologias que utilizo no meu dia a dia:
                 </p>
                 <div className={styles.tecnologiasContainer}>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" alt="Laravel" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" alt="C#" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" />
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" />
+                    <img src={`${urlTechnologies}javascript/javascript-original.svg`} alt="JavaScript" />
+                    <img src={`${urlTechnologies}react/react-original.svg`} alt="React" />
+                    <img src={`${urlTechnologies}java/java-original.svg`} alt="Java" />
+                    <img src={`${urlTechnologies}php/php-original.svg`} alt="PHP" />
+                    <img src={`${urlTechnologies}laravel/laravel-original.svg`} alt="Laravel" />
+                    <img src={`${urlTechnologies}csharp/csharp-original.svg`} alt="C#" />
+                    <img src={`${urlTechnologies}postgresql/postgresql-original.svg`} alt="PostgreSQL" />
+                    <img src={`${urlTechnologies}mysql/mysql-original.svg`} alt="MySQL" />
                 </div>
             </section>
         </>

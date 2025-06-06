@@ -18,6 +18,133 @@
         filter: drop-shadow(0 3px 10px rgba(169, 112, 255, 0.3));
     }
 
+    .left {
+        max-width: 282px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        #projetoImage {
+            width: 100%;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
+
+        .year {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: var(--color-primary);
+            font-weight: 600;
+            font-style: italic;
+            filter: drop-shadow(0 1px 1px rgba(169, 112, 255, 0.25));
+        }
+
+        .languages {
+            list-style: none;
+            padding: 0;
+            margin-top: 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            align-items: center;
+            justify-content: center;
+
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: var(--color-surface-border);
+                color: var(--color-text);
+                padding: 0.3rem 0.6rem;
+                font-size: 0.8rem;
+                border-radius: var(--radius);
+
+                img {
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 0.3rem;
+                    object-fit: contain;
+                }
+            }
+        }
+
+        .status {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            z-index: 2;
+            padding: 0.3rem 0.8rem;
+            font-size: 0.7rem;
+            font-weight: bold;
+            border-radius: 999px;
+            text-transform: uppercase;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .concluído {
+            background-color: rgba(0, 128, 0, 0.1);
+            color: #008000;
+            border-color: #00800033;
+        }
+
+        .emdesenvolvimento {
+            background-color: rgba(255, 165, 0, 0.1);
+            color: #FFA500;
+            border-color: #FFA50033;
+        }
+
+        .pausado {
+            background-color: rgba(220, 20, 60, 0.1);
+            color: #DC143C;
+            border-color: #DC143C33;
+        }
+    }
+
+    .right {
+        flex: 1;
+        text-align: justify;
+        justify-content: space-between;
+        flex-direction: column;
+        display: flex;
+
+        p {
+            font-size: 1rem;
+        }
+
+        .stackContainer {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .stack {
+            display: inline-block;
+            margin: 1rem 0;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            background-color: rgba(169, 112, 255, 0.1);
+            color: var(--color-primary);
+            border: 1px solid var(--color-primary);
+            width: fit-content;
+        }
+    }
+
+    .projetoConteudo {
+        display: flex;
+        width: 100%;
+        gap: 2rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .linkContainer {
         width: 100%;
         display: flex;
@@ -48,133 +175,7 @@
     }
 }
 
-.projetoConteudo {
-    display: flex;
-    width: 100%;
-    gap: 2rem;
-    justify-content: center;
-    flex-wrap: wrap;
-}
 
-.left {
-    max-width: 282px;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-
-    #projetoImage {
-        width: 100%;
-        border-radius: 8px;
-        transition: all 0.3s ease;
-        border: 1px solid transparent;
-    }
-}
-
-.right {
-    flex: 1;
-    text-align: justify;
-    justify-content: space-between;
-    flex-direction: column;
-    display: flex;
-
-    p {
-        font-size: 1rem;
-    }
-
-    .stackContainer {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-.languages {
-    list-style: none;
-    padding: 0;
-    margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    align-items: center;
-    justify-content: center;
-
-    li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: var(--color-surface-border);
-        color: var(--color-text);
-        padding: 0.3rem 0.6rem;
-        font-size: 0.8rem;
-        border-radius: var(--radius);
-
-        img {
-            width: 16px;
-            height: 16px;
-            margin-right: 0.3rem;
-            object-fit: contain;
-        }
-    }
-}
-
-.stack {
-    display: inline-block;
-    margin: 1rem 0;
-    padding: 0.4rem 0.8rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    background-color: rgba(169, 112, 255, 0.1);
-    color: var(--color-primary);
-    border: 1px solid var(--color-primary);
-    width: fit-content;
-}
-
-.year {
-    display: block;
-    margin-top: 0.5rem;
-    font-size: 0.85rem;
-    color: var(--color-primary);
-    font-weight: 600;
-    font-style: italic;
-    filter: drop-shadow(0 1px 1px rgba(169, 112, 255, 0.25));
-}
-
-.status {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    z-index: 2;
-    padding: 0.3rem 0.8rem;
-    font-size: 0.7rem;
-    font-weight: bold;
-    border-radius: 999px;
-    text-transform: uppercase;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.concluído {
-    background-color: rgba(0, 128, 0, 0.1);
-    color: #008000;
-    border-color: #00800033;
-}
-
-.emdesenvolvimento {
-    background-color: rgba(255, 165, 0, 0.1);
-    color: #FFA500;
-    border-color: #FFA50033;
-}
-
-.pausado {
-    background-color: rgba(220, 20, 60, 0.1);
-    color: #DC143C;
-    border-color: #DC143C33;
-}
 
 @media (max-width: 768px) {
     .projetoConteudo {

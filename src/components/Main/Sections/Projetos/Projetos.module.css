@@ -10,10 +10,10 @@
         font-size: 2rem;
         margin-bottom: 2rem;
     }
-}
 
-.projetosContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+    .projetosContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
 }

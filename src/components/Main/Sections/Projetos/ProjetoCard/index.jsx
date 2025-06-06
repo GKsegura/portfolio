@@ -16,10 +16,14 @@ const getStackEmoji = (stack) => {
 const ProjetoCard = ({ projeto }) => {
     return (
         <div className={styles.projeto}>
+
             {/* {HEADER} */}
+
             <h3>{projeto.title}</h3>
             <div className={styles.projetoConteudo}>
+
                 {/* LADO ESQUERDO */}
+
                 <div className={styles.left}>
                     <img src={projeto.image} alt={projeto.title} id={styles.projetoImage} />
                     {projeto.year && <small className={styles.year}>Desenvolvido em: {projeto.year}</small>}
@@ -47,7 +51,9 @@ const ProjetoCard = ({ projeto }) => {
                         </span>
                     )}
                 </div>
+
                 {/* LADO DIREITO */}
+
                 <div className={styles.right}>
                     <p>
                         {projeto.description.split('\n').map((line, index) => (
