@@ -42,16 +42,5 @@
     "stack": "Full Stack",
     "year": 2022,
     "status": "Concluído"
-  },
-  {
-    "id": 5,
-    "title": "todo-app-ts",
-    "description": "Aplicação de lista de tarefas (To-Do List) desenvolvida em React com TypeScript, criada como desafio prático do curso de React da Rocketseat.\nO projeto foca em boas práticas de desenvolvimento front-end, tipagem estática e componentes reutilizáveis, com funcionalidades para adicionar, marcar como concluída e remover tarefas.\nIdeal para quem quer entender a combinação React + TypeScript em um app real e leve.",
-    "link": "https://github.com/GKsegura/todo-app-ts",
-    "image": "/assets/todo.png",
-    "languages": ["React", "TypeScript", "JavaScript", "CSS"],
-    "stack": "Front-end",
-    "year": 2025,
-    "status": "Concluído"
   }
 ]
