@@ -33,7 +33,7 @@ const Sobre = () => {
                     <img src={`${urlTechnologies}java/java-original.svg`} alt="Java" />
                     <img src={`${urlTechnologies}php/php-original.svg`} alt="PHP" />
                     <img src={`${urlTechnologies}laravel/laravel-original.svg`} alt="Laravel" />
-                    <img src={`${urlTechnologies}csharp/csharp-original.svg`} alt="C#" />
+                    {/* <img src={`${urlTechnologies}csharp/csharp-original.svg`} alt="C#" /> */}
                     <img src={`${urlTechnologies}postgresql/postgresql-original.svg`} alt="PostgreSQL" />
                     <img src={`${urlTechnologies}mysql/mysql-original.svg`} alt="MySQL" />
                 </div>
