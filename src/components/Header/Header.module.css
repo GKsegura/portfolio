@@ -82,6 +82,15 @@
     }
 }
 
+@media (max-width: 1200px) {
+    .header {
+        width: 100%;
+        left: 0;
+        transform: none;
+    }
+}
+
+
 @media (max-width: 768px) {
     .header {
         flex-direction: column;
@@ -91,5 +100,6 @@
         left: 0;
         transform: none;
         top: 0;
+        width: 100%;
     }
 }
