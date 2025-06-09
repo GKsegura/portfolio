@@ -1,8 +1,18 @@
 import { useState } from 'react';
+import languages from '../../../../data/languages.json'; // 👈 importa aqui
 import projetosData from '../../../../data/projetos.json';
 import Modal from './Modal';
 import ProjetoCard from './ProjetoCard';
 import styles from './Projetos.module.css';
+
+const getStackEmoji = (stack) => {
+    switch (stack.toLowerCase()) {
+        case 'full stack': return '🌐';
+        case 'front-end': return '💻';
+        case 'back-end': return '⚙️';
+        default: return '📦';
+    }
+};
 
 const Projetos = () => {
     const [selectedProjeto, setSelectedProjeto] = useState(null);
@@ -15,18 +25,20 @@ const Projetos = () => {
             <h2>Projetos</h2>
             <div className={styles.projetosContainer}>
                 {projetosData.map((projeto) => (
-                    <div key={projeto.id} onClick={() => openModal(projeto)} style={{ cursor: 'pointer' }}>
-                        <ProjetoCard projeto={projeto} />
+                    <div key={projeto.id}>
+                        <ProjetoCard projeto={projeto} onVerMais={() => openModal(projeto)} />
                     </div>
+
                 ))}
             </div>
 
             {selectedProjeto && (
-                <Modal onClose={closeModal}>
-                    <h2>{selectedProjeto.title}</h2>
-                    <p>{selectedProjeto.description}</p>
-                    <button onClick={closeModal}>Fechar</button>
-                </Modal>
+                <Modal
+                    projeto={selectedProjeto}
+                    onClose={closeModal}
+                    getStackEmoji={getStackEmoji}
+                    languages={languages}
+                />
             )}
         </section>
     );

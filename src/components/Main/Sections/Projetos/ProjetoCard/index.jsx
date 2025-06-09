@@ -1,4 +1,3 @@
-import { FaGithub } from 'react-icons/fa';
 import languages from '../../../../../data/languages.json';
 import styles from './ProjetoCard.module.css';
 
@@ -11,7 +10,7 @@ const getStackEmoji = (stack) => {
     }
 };
 
-const ProjetoCard = ({ projeto }) => {
+const ProjetoCard = ({ projeto, onVerMais }) => {
     return (
         <div className={styles.projeto}>
             <h3>{projeto.title}</h3>
@@ -46,16 +45,19 @@ const ProjetoCard = ({ projeto }) => {
                         )}
                     </div>
                     <div className={styles.linkContainer}>
-                        <a href={projeto.link} target="_blank" rel="noopener noreferrer" className={styles.link}>
-                            <FaGithub className={styles.icon} />
-                            Ver projeto
-                        </a>
+                        <button
+                            className={styles.link}
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                onVerMais();
+                            }}
+                        >
+                            Ver mais
+                        </button>
                     </div>
                 </div>
-
             </div>
         </div>
-
     );
 };
 
