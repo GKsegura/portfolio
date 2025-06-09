@@ -1,19 +1,16 @@
 @import './variables.css';
 
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Tipografia e fluidez responsiva */
 html {
     scroll-behavior: smooth;
     font-size: clamp(14px, 1.5vw, 16px);
 }
 
-/* Corpo e fundo */
 body {
     font-family: 'Sora', sans-serif;
     background-color: var(--color-bg);
@@ -32,7 +29,6 @@ body {
     cursor: default;
 }
 
-/* Cartão glass reutilizável */
 .glass {
     background: var(--color-surface);
     border: 1px solid var(--color-surface-border);
@@ -44,7 +40,6 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
-/* Botão com acessibilidade */
 button {
     background: var(--color-primary);
     color: white;
@@ -64,7 +59,6 @@ button {
     }
 }
 
-/* Cabeçalhos */
 h1,
 h2,
 h3 {

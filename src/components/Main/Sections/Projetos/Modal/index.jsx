@@ -19,7 +19,7 @@ const Modal = ({ projeto, onClose, getStackEmoji, languages }) => {
 
                     {/* LADO ESQUERDO */}
                     <div className={styles.left}>
-                        <img src={projeto.image} alt={projeto.title} id={styles.projetoImage} />
+                        <img src={projeto.image} alt={projeto.title} className={styles.projetoImage} />
 
                         {projeto.year && (
                             <small className={styles.year}>
