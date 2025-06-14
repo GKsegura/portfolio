@@ -5,7 +5,7 @@
     "description": "QInvest é uma aplicação web fullstack desenvolvida como Trabalho de Conclusão de Curso (TCC) do Técnico em Informática (2023). O projeto tem como objetivo auxiliar no controle e planejamento de investimentos financeiros, oferecendo uma interface moderna e funcional. \n Atuei como líder técnico do grupo, sendo responsável pelas principais decisões arquiteturais, organização do time e integração das tecnologias. Além disso, participei ativamente como desenvolvedor full stack, construindo tanto a estrutura de backend (Laravel) quanto o frontend (Vite).",
     "link": "https://github.com/GKsegura/qinvest-web",
     "image": "/assets/qinvest.png",
-    "languages": ["Laravel", "JavaScript", "CSS", "PostgreSQL", "Node"],
+    "languages": ["Laravel", "JavaScript", "CSS", "PostgreSQL"],
     "stack": "Full Stack",
     "year": 2023,
     "status": "Concluído"
@@ -34,6 +34,17 @@
   },
   {
     "id": 4,
+    "title": "People Fetcher",
+    "description": "PeopleFetcher é uma aplicação web desenvolvida para praticar o consumo de APIs RESTful. \nA plataforma permite fazer um CRUD utilizando a APIdesenvolvida no projeto Pessoa API, possibilitando a criação, leitura, atualização e exclusão de registros de pessoas. \nO projeto foi construído com foco na simplicidade e clareza do código, utilizando React para o front-end e Axios para as requisições HTTP.",
+    "link": "https://github.com/GKsegura/PeopleFetcher",
+    "image": "/assets/peopleFetcher.png",
+    "languages": ["React", "JavaScript", "CSS"],
+    "stack": "Front-end",
+    "year": 2025,
+    "status": "Em desenvolvimento"
+  },
+  {
+    "id": 5,
     "title": "EcoTube",
     "description": "EcoTube é um e-commerce de canudos de vidro sustentáveis, criado com o objetivo de promover o consumo consciente através da tecnologia.\nA plataforma permite a navegação por produtos, exibição de detalhes, adição ao carrinho e simula a jornada de compra de forma intuitiva.\nO projeto foi desenvolvido com foco na usabilidade, componentização e um visual limpo e funcional — alinhando propósito ecológico e boa experiência do usuário.",
     "link": "https://github.com/GKsegura/EcoTube",

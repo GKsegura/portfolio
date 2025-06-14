@@ -63,7 +63,6 @@ const Modal = ({ projeto, onClose, getStackEmoji, languages }) => {
                                 </React.Fragment>
                             ))}
                         </p>
-
                         <div className={styles.stackContainer}>
                             {projeto.stack && (
                                 <span className={styles.stack}>
