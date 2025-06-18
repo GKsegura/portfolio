@@ -19,11 +19,11 @@ const Sobre = () => {
                             Atualmente, estou me aprofundando em <strong>Java, Spring Boot e MySQL</strong>, focando no desenvolvimento back-end para criar aplicações <strong>mais robustas, escaláveis e performáticas</strong>.<br /><br />
                             Sou movido pela missão de <strong>resolver problemas, aprender constantemente e transformar desafios em soluções eficientes</strong>. Acredito que tecnologia é muito mais do que código — é uma ponte entre ideias e resultados.<br /><br />
                             Tenho facilidade em <strong>trabalhar em equipe, encarar desafios complexos e aplicar criatividade em cada projeto</strong>. Prezo por <strong>código limpo, boas práticas e por ver as ideias saindo do papel e ganhando vida</strong>.<br /><br />
-                            O que realmente me impulsiona é o <strong>desenvolvimento web</strong>. Se você tem um projeto, uma ideia ou precisa turbinar seu sistema, <span className={styles.cta}><a href="#contato">me chama e bora construir algo incrível juntos!</a></span>
-                        </p>
+                            O que realmente me impulsiona é o <strong>desenvolvimento web</strong>. Se você tem um projeto, uma ideia ou precisa turbinar seu sistema, <span className={styles.cta}><a href="#contato">me chama e bora construir algo incrível juntos!</a></span> <br /><br />
+                            Além disso, aqui você pode baixar o <span className={styles.cta}><a href="/CVJoseSegura.pdf" download>meu currículo</a></span>!</p>
                     </div>
                 </div>
-            </section>
+            </section >
             <section className={styles.tecnologias} id='tecnologias'>
                 <h1>Tecnologias que uso</h1>
                 <div className={styles.tecnologiasContainer}>
