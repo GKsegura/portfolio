@@ -59,6 +59,31 @@
                     }
                 }
             }
+
+            .toggleButton {
+                display: inline-block;
+                padding: 0.5rem 1.2rem;
+                margin-top: 1rem;
+                background-color: transparent;
+                color: var(--color-primary);
+                border: 2px solid var(--color-primary);
+                border-radius: 8px;
+                cursor: pointer;
+                font-weight: bold;
+                transition: all 0.3s ease;
+                text-align: center;
+
+
+                &:hover {
+                    background-color: var(--color-primary);
+                    color: white;
+                    transform: scale(1.05);
+                }
+
+                &:active {
+                    transform: scale(0.98);
+                }
+            }
         }
 
         @media (min-width: 768px) {
