@@ -23,11 +23,11 @@ const Sobre = () => {
                         </h1>
                         <p className={styles.description}>
                             <strong>Desenvolvedor Full-Stack</strong>.<br /><br />
-                            Tenho experiência prática com <strong>JavaScript, React, Java, PHP (Laravel), C#, PostgreSQL e MySQL</strong>. Ao longo da minha trajetória acadêmica, desenvolvi <strong>projetos como e-commerces, plataformas de investimentos e sistemas com dashboards interativos</strong>, trabalhando com integração de APIs e <strong>renderização de dados e gráficos em tempo real</strong>.<br /><br />
+                            Tenho experiência prática com <strong>JavaScript, React, Java, PHP (Laravel), PostgreSQL e MySQL</strong>. Ao longo da minha trajetória acadêmica, desenvolvi <strong>projetos como e-commerces, plataformas de investimentos e sistemas com dashboards interativos</strong>, trabalhando com integração de APIs e <strong>renderização de dados e gráficos em tempo real</strong>.<br /><br />
 
                             {showMore && (
                                 <>
-                                    Atualmente, estou me aprofundando em <strong>Java, Spring Boot e MySQL</strong>, focando no desenvolvimento back-end para criar aplicações <strong>mais robustas, escaláveis e performáticas</strong>.<br /><br />
+                                    Atualmente, estou me aprofundando em <strong>Java e MySQL</strong>, focando no desenvolvimento back-end para criar aplicações <strong>mais robustas, escaláveis e performáticas</strong>.<br /><br />
                                     Sou movido pela missão de <strong>resolver problemas, aprender constantemente e transformar desafios em soluções eficientes</strong>. Acredito que tecnologia é muito mais do que código — é uma ponte entre ideias e resultados.<br /><br />
                                     Tenho facilidade em <strong>trabalhar em equipe, encarar desafios complexos e aplicar criatividade em cada projeto</strong>. Prezo por <strong>código limpo, boas práticas e por ver as ideias saindo do papel e ganhando vida</strong>.<br /><br />
                                 </>

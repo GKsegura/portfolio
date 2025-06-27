@@ -11,33 +11,11 @@
     "status": "Concluído"
   },
   {
-    "id": 2,
-    "title": "Pessoa API",
-    "description": "API RESTful desenvolvida em Java com Spring Boot, com o objetivo de praticar os fundamentos da construção de APIs modernas. \nO projeto implementa operações CRUD para entidades do tipo “Pessoa”, seguindo boas práticas com camadas bem definidas, integração com banco de dados via JPA e tratamento adequado de exceções.",
-    "link": "https://github.com/GKsegura/pessoa-api",
-    "image": "/assets/pessoa-api.png",
-    "languages": ["Java", "Spring Boot", "MySQL", "Maven"],
-    "stack": "Back-end",
-    "year": 2025,
-    "status": "Em desenvolvimento"
-  },
-  {
     "id": 3,
     "title": "Portfólio GKsegura",
     "description": "Este repositório serve como portfólio principal de projetos desenvolvidos por mim.\nAqui você encontra aplicações web completas, APIs RESTful e experimentações que demonstram minha evolução como desenvolvedor.\nMeus projetos são focados em boas práticas de código, clareza arquitetural e, sempre que possível, uma pitada de criatividade.",
     "link": "https://github.com/GKsegura/repositorio-gksegura",
     "image": "/assets/repositorio.png",
-    "languages": ["React", "JavaScript", "CSS"],
-    "stack": "Front-end",
-    "year": 2025,
-    "status": "Em desenvolvimento"
-  },
-  {
-    "id": 4,
-    "title": "People Fetcher",
-    "description": "PeopleFetcher é uma aplicação web desenvolvida para praticar o consumo de APIs RESTful. \nA plataforma permite fazer um CRUD utilizando a APIdesenvolvida no projeto Pessoa API, possibilitando a criação, leitura, atualização e exclusão de registros de pessoas. \nO projeto foi construído com foco na simplicidade e clareza do código, utilizando React para o front-end e Axios para as requisições HTTP.",
-    "link": "https://github.com/GKsegura/PeopleFetcher",
-    "image": "/assets/peopleFetcher.png",
     "languages": ["React", "JavaScript", "CSS"],
     "stack": "Front-end",
     "year": 2025,
