@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "title": "Portfólio GKsegura",
+    "title": "Portfólio v1",
     "description": "Este repositório serve como portfólio principal de projetos desenvolvidos por mim.\nAqui você encontra aplicações web completas, APIs RESTful e experimentações que demonstram minha evolução como desenvolvedor.\nMeus projetos são focados em boas práticas de código, clareza arquitetural e, sempre que possível, uma pitada de criatividade.",
     "link": "https://github.com/GKsegura/repositorio-gksegura",
     "image": "/assets/repositorio.png",
@@ -28,7 +28,7 @@
     ],
     "stack": "Front-end",
     "year": 2025,
-    "status": "Em desenvolvimento"
+    "status": "Concluído"
   },
   {
     "id": 3,
@@ -38,12 +38,43 @@
     "image": "/assets/ecotube.png",
     "languages": [
       "PHP",
-      "CSS",
       "JavaScript",
+      "CSS",
       "PostgreSQL"
     ],
     "stack": "Full Stack",
     "year": 2022,
     "status": "Concluído"
+  },
+  {
+    "id": 4,
+    "title": "apiGKsegura",
+    "description": "Api desenvolvida para salvar os projetos do portfolio.",
+    "link": "https://github.com/GKsegura/apiGKsegura",
+    "image": "/assets/apigksegura.png",
+    "languages": [
+      "Spring Boot",
+      "Maven",
+      "Java",
+      "MySQL"
+    ],
+    "stack": "Back-end",
+    "year": 2025,
+    "status": "Em desenvolvimento"
+  },
+  {
+    "id": 5,
+    "title": "Portfólio v2",
+    "description": "Este repositório é meu portfólio principal, focado em mostrar minhas habilidades reais de desenvolvimento front-end com forte integração back-end. Diferente da versão anterior, que tinha um foco mais visual e UI/UX, aqui o destaque é para a lógica, arquitetura e consumo de uma API Java feita sob medida. É uma evolução que reforça meu perfil como desenvolvedor completo, deixando de lado a \"cara de designer\" para mostrar um front-end funcional, limpo e conectado com o backend.",
+    "link": "https://github.com/GKsegura/portfolio_v2",
+    "image": "/assets/repositorio2.png",
+    "languages": [
+      "React",
+      "JavaScript",
+      "CSS"
+    ],
+    "stack": "Front-end",
+    "year": 2025,
+    "status": "Em desenvolvimento"
   }
 ]
