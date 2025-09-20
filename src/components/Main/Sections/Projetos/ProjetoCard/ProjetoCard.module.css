@@ -13,11 +13,13 @@
     transition: transform 0.3s ease,
         background 0.3s ease,
         box-shadow 0.3s ease;
-}
 
-.projeto:hover {
-    box-shadow: var(--shadow-medium);
-    background: var(--color-surface-hover);
+    &:hover {
+        transform: translateY(-5px);
+        background: var(--color-surface-hover, rgba(169, 112, 255, 0.07));
+        box-shadow: 0 8px 24px rgba(169, 112, 255, 0.18), 0 1.5px 6px rgba(0, 0, 0, 0.07);
+        border-color: var(--color-primary);
+    }
 }
 
 
