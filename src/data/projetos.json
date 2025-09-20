@@ -76,5 +76,20 @@
     "stack": "Front-end",
     "year": 2025,
     "status": "Em desenvolvimento"
+  },
+  {
+    "id": 6,
+    "title": "CRONOS",
+    "description": "Este projeto foi desenvolvido para auxiliar meu dia a dia como N1 e, ao mesmo tempo, servir como prática em Java. A aplicação em terminal permite cadastrar tarefas e controlar o tempo de trabalho de forma simples e eficiente. O foco está na funcionalidade, oferecendo uma interface direta e prática que atende às necessidades diárias enquanto fortalece minhas habilidades de programação.",
+    "link": "https://github.com/GKsegura/CRONOS",
+    "image": "/assets/cronos.png",
+    "languages": [
+      "Java",
+      "Maven",
+      "SQLite"
+    ],
+    "stack": "Back-end",
+    "year": 2025,
+    "status": "Em desenvolvimento"
   }
 ]
