@@ -19,23 +19,23 @@ const Sobre = () => {
                     </div>
                     <div className={styles.textContent}>
                         <h1>
-                            Olá, eu sou o <span className={styles.highlight}>José Segura</span> 👨‍💻
+                            Olá, eu sou o <span className={styles.highlight}>José Segura</span>
                         </h1>
                         <p className={styles.description}>
                             <strong>Desenvolvedor Full-Stack</strong>.<br /><br />
-                            Tenho experiência prática com <strong>JavaScript, React, Java, PHP (Laravel), PostgreSQL e MySQL</strong>. Ao longo da minha trajetória acadêmica, desenvolvi <strong>projetos como e-commerces, plataformas de investimentos e sistemas com dashboards interativos</strong>, trabalhando com integração de APIs e <strong>renderização de dados e gráficos em tempo real</strong>.<br />
-                            Atuo como Analista de Suporte Nível 1, oferecendo soluções técnicas e garantindo a eficiência dos processos e o suporte aos usuários.<br /><br />
+                            Tenho experiência prática com <strong>JavaScript, React, Java, PHP (Laravel), PostgreSQL e MySQL</strong>. Ao longo da minha trajetória acadêmica, desenvolvi <strong>projetos como e-commerces, plataformas de investimentos e sistemas com dashboards interativos</strong>, lidando com integração de APIs e <strong>renderização de dados e gráficos em tempo real</strong>.<br />
+                            Atualmente, atuo como Analista de Suporte Nível 1, oferecendo soluções técnicas, garantindo a eficiência dos processos e suporte aos usuários.<br /><br />
 
                             {showMore && (
                                 <>
-                                    Estou me aprofundando em <strong>Java e MySQL</strong>, focando no desenvolvimento back-end para criar aplicações <strong>mais robustas, escaláveis e performáticas</strong>.<br /><br />
-                                    Sou movido pela missão de <strong>resolver problemas, aprender constantemente e transformar desafios em soluções eficientes</strong>. Acredito que tecnologia é muito mais do que código — é uma ponte entre ideias e resultados.<br /><br />
-                                    Tenho facilidade em <strong>trabalhar em equipe, encarar desafios complexos e aplicar criatividade em cada projeto</strong>. Prezo por <strong>código limpo, boas práticas e por ver as ideias saindo do papel e ganhando vida</strong>.<br /><br />
+                                    Estou aprofundando meus conhecimentos em <strong>Java e MySQL</strong>, focando no desenvolvimento back-end para criar aplicações <strong>robustas, escaláveis e performáticas</strong>.<br /><br />
+                                    Sou movido por <strong>resolver problemas, aprender constantemente e transformar desafios em soluções práticas</strong>. Para mim, tecnologia vai além de código — é a ponte entre ideias e resultados concretos.<br /><br />
+                                    Tenho facilidade em <strong>trabalhar em equipe, encarar desafios complexos e aplicar criatividade em cada projeto</strong>. Prezo por <strong>código limpo, boas práticas e ver ideias saindo do papel e ganhando vida</strong>.<br /><br />
                                 </>
                             )}
 
-                            O que realmente me impulsiona é o <strong>desenvolvimento web</strong>. Se você tem um projeto, uma ideia ou precisa turbinar seu sistema, <span className={styles.cta}><a href="#contato">me chama e bora construir algo incrível juntos!</a></span> <br /><br />
-                            Além disso, aqui você pode baixar o <span className={styles.cta}><a href="/CVJoseSegura.pdf" download>meu currículo</a></span>!
+                            O que realmente me impulsiona é o <strong>desenvolvimento web</strong>. Se você tem um projeto, uma ideia ou quer turbinar seu sistema, <span className={styles.cta}><a href="#contato">me chama e vamos construir algo incrível juntos!</a></span>.<br /><br />
+                            Além disso, você pode baixar o <span className={styles.cta}><a href="/CVJoseSegura.pdf" download>meu currículo</a></span>!
                         </p>
 
                         <button
