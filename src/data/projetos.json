@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "title": "Portfólio v1",
+    "title": "Portfólio",
     "description": "Este repositório serve como portfólio principal de projetos desenvolvidos por mim.\nAqui você encontra aplicações web completas, APIs RESTful e experimentações que demonstram minha evolução como desenvolvedor.\nMeus projetos são focados em boas práticas de código, clareza arquitetural e, sempre que possível, uma pitada de criatividade.",
     "link": "https://github.com/GKsegura/repositorio-gksegura",
     "image": "/assets/repositorio.png",
@@ -48,37 +48,6 @@
   },
   {
     "id": 4,
-    "title": "apiGKsegura",
-    "description": "Api desenvolvida para salvar os projetos do portfolio.",
-    "link": "https://github.com/GKsegura/apiGKsegura",
-    "image": "/assets/apigksegura.png",
-    "languages": [
-      "Spring Boot",
-      "Maven",
-      "Java",
-      "MySQL"
-    ],
-    "stack": "Back-end",
-    "year": 2025,
-    "status": "Em desenvolvimento"
-  },
-  {
-    "id": 5,
-    "title": "Portfólio v2",
-    "description": "Este repositório é meu portfólio principal, focado em mostrar minhas habilidades reais de desenvolvimento front-end com forte integração back-end. Diferente da versão anterior, que tinha um foco mais visual e UI/UX, aqui o destaque é para a lógica, arquitetura e consumo de uma API Java feita sob medida. É uma evolução que reforça meu perfil como desenvolvedor completo, deixando de lado a \"cara de designer\" para mostrar um front-end funcional, limpo e conectado com o backend.",
-    "link": "https://github.com/GKsegura/portfolio_v2",
-    "image": "/assets/repositorio2.png",
-    "languages": [
-      "React",
-      "JavaScript",
-      "CSS"
-    ],
-    "stack": "Front-end",
-    "year": 2025,
-    "status": "Em desenvolvimento"
-  },
-  {
-    "id": 6,
     "title": "CRONOS",
     "description": "Este projeto foi desenvolvido para auxiliar meu dia a dia como N1 e, ao mesmo tempo, servir como prática em Java. A aplicação em terminal permite cadastrar tarefas e controlar o tempo de trabalho de forma simples e eficiente. O foco está na funcionalidade, oferecendo uma interface direta e prática que atende às necessidades diárias enquanto fortalece minhas habilidades de programação.",
     "link": "https://github.com/GKsegura/CRONOS",
