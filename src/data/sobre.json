@@ -1,0 +1,75 @@
+{
+    "intro": {
+        "nome": "José Segura",
+        "titulo": "Desenvolvedor Full-Stack",
+        "paragrafos": [
+            {
+                "id": 1,
+                "texto": "<strong>Desenvolvedor Full-Stack</strong> com experiência prática em <strong>Java, JavaScript, MySQL, React, PostgreSQL e PHP (Laravel)</strong>.",
+                "visivel": true
+            },
+            {
+                "id": 2,
+                "texto": "Atualmente atuo como <strong>Analista de Suporte</strong> na <strong>Nexum Tecnologia</strong>, onde trabalho com <strong>BPM, automações através de robôs e integrações em Java</strong>. Utilizo <strong>JavaScript no desenvolvimento de processos</strong> e a <strong>plataforma Lecom</strong> para não apenas implementar tecnologias, mas entregar performance real aos clientes.",
+                "visivel": true
+            },
+            {
+                "id": 3,
+                "texto": "Já desenvolvi <strong>e-commerces, plataformas de investimentos e dashboards</strong>, com integração de APIs e <strong>dados em tempo real</strong>.",
+                "visivel": true
+            },
+            {
+                "id": 4,
+                "texto": "Estou aprofundando meus conhecimentos em <strong>Java e MySQL</strong>, focando no desenvolvimento back-end para criar aplicações <strong>robustas, escaláveis e performáticas</strong>.",
+                "visivel": false
+            },
+            {
+                "id": 5,
+                "texto": "Sou movido por <strong>resolver problemas, aprender constantemente e transformar desafios em soluções práticas</strong>. Para mim, tecnologia vai além de código — é a ponte entre ideias e resultados concretos.",
+                "visivel": false
+            },
+            {
+                "id": 6,
+                "texto": "Tenho facilidade em <strong>trabalhar em equipe, encarar desafios complexos e aplicar criatividade em cada projeto</strong>. Prezo por <strong>código limpo, boas práticas e ver ideias saindo do papel e ganhando vida</strong>.",
+                "visivel": false
+            }
+        ],
+        "cta": {
+            "texto": "O que realmente me impulsiona é o ",
+            "destaque": "desenvolvimento web",
+            "textoContinuacao": ". Se você tem um projeto, uma ideia ou quer turbinar seu sistema, ",
+            "linkTexto": "me chama e vamos construir algo incrível juntos!",
+            "linkHref": "#contato"
+        },
+        "curriculo": {
+            "texto": "Além disso, você pode baixar o ",
+            "linkTexto": "meu currículo",
+            "linkHref": "/CVJoseSegura.pdf"
+        }
+    },
+    "tecnologias": {
+        "titulo": "Tecnologias que mais uso",
+        "lista": [
+            {
+                "nome": "Java",
+                "icone": "java/java-original.svg"
+            },
+            {
+                "nome": "JavaScript",
+                "icone": "javascript/javascript-original.svg"
+            },
+            {
+                "nome": "React",
+                "icone": "react/react-original.svg"
+            },
+            {
+                "nome": "MySQL",
+                "icone": "mysql/mysql-original.svg"
+            }
+        ]
+    },
+    "botoes": {
+        "verMais": "Ver mais ▼",
+        "verMenos": "Ver menos ▲"
+    }
+}
