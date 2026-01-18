@@ -29,27 +29,33 @@
     }
 
     .cta {
-        color: white;
+        color: var(--color-text-inverted);
         text-decoration: none;
-        font-weight: bold;
-        display: flex;
+        font-weight: 600;
+        display: inline-flex;
         align-items: center;
-        gap: 0.3rem;
-        transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
-
+        gap: 0.5rem;
+        transition: all var(--transition-normal);
         background-color: var(--color-primary);
         padding: 1rem 2rem;
         border-radius: var(--radius);
         border: 1px solid transparent;
+        box-shadow: 0 4px 12px rgba(169, 112, 255, 0.3);
 
         &:hover {
-            color: var(--color-text);
             background-color: var(--color-primary-hover);
-            border-color: var(--color-secondary);
+            border-color: var(--color-primary);
+            box-shadow: 0 6px 20px rgba(169, 112, 255, 0.4);
+            transform: translateY(-3px);
+        }
+
+        &:active {
+            transform: translateY(-1px);
+            box-shadow: 0 3px 10px rgba(169, 112, 255, 0.3);
         }
 
         .ctaText {
-            font-weight: bold;
+            font-weight: 600;
         }
     }
 }

@@ -2,18 +2,39 @@
     /* Cores principais */
     --color-bg: #0e0e17;
     --color-primary: #a970ff;
+    --color-primary-hover: #b388ff;
     --color-secondary: #b388ff;
     --color-accent: rgba(255, 255, 255, 0.06);
 
     /* Texto */
     --color-text: #f0f0ff;
     --color-text-muted: #b0aecd;
+    --color-text-inverted: #ffffff;
 
     /* Glassmorphism */
     --color-surface: rgba(255, 255, 255, 0.07);
+    --color-surface-hover: rgba(169, 112, 255, 0.07);
     --color-surface-border: rgba(255, 255, 255, 0.12);
     --blur: 16px;
     --shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    --shadow-small: 0 4px 16px rgba(0, 0, 0, 0.25);
 
+    /* Radius */
     --radius: 16px;
+    --radius-small: 8px;
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* Gradient Background */
+    --gradient-1: rgba(169, 112, 255, 0.25);
+    /* Roxo mais intenso */
+    --gradient-2: rgba(179, 136, 255, 0.20);
+    /* Roxo secundário */
+    --gradient-3: rgba(138, 43, 226, 0.12);
+    /* Roxo mais escuro */
+    --gradient-4: rgba(255, 255, 255, 0.03);
+    /* Branco sutil */
 }

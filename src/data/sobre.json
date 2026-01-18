@@ -5,7 +5,7 @@
         "paragrafos": [
             {
                 "id": 1,
-                "texto": "<strong>Desenvolvedor Full-Stack</strong> com experiência prática em <strong>Java, JavaScript, MySQL, React, PostgreSQL e PHP (Laravel)</strong>.",
+                "texto": "<strong>Desenvolvedor Full-Stack</strong> com experiência prática em <strong>Java, JavaScript, MySQL e React</strong>.",
                 "visivel": true
             },
             {
