@@ -1,8 +1,10 @@
 import React from 'react';
 import { FaGithub, FaTimes } from 'react-icons/fa';
+import { formatPeriod } from '../../../../../utils/date';
+import { getStackEmoji } from '../../../../../utils/project';
 import styles from './Modal.module.css';
 
-const Modal = ({ projeto, onClose, getStackEmoji, languages }) => {
+const Modal = ({ projeto, onClose, languages }) => {
     return (
         <div className={styles.overlay} onClick={onClose}>
             <div className={styles.projeto} onClick={e => e.stopPropagation()}>
@@ -21,9 +23,9 @@ const Modal = ({ projeto, onClose, getStackEmoji, languages }) => {
                     <div className={styles.left}>
                         <img src={projeto.image} alt={projeto.title} className={styles.projetoImage} />
 
-                        {projeto.year && (
+                        {projeto.period && (
                             <small className={styles.year}>
-                                Desenvolvido em: {projeto.year}
+                                {formatPeriod(projeto.period, projeto.status)}
                             </small>
                         )}
 

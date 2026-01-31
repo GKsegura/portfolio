@@ -38,7 +38,6 @@ const Sobre = () => {
                                         {sobreData.intro.cta.linkTexto}
                                     </a>
                                 </span>
-                                .
                             </p>
 
                             <p>

@@ -12,7 +12,10 @@
       "PostgreSQL"
     ],
     "stack": "Full Stack",
-    "year": 2023,
+    "period": {
+      "start": 2023,
+      "end": 2023
+    },
     "status": "Concluído"
   },
   {
@@ -27,8 +30,10 @@
       "CSS"
     ],
     "stack": "Front-end",
-    "year": 2025,
-    "status": "Concluído"
+    "period": {
+      "start": 2025
+    },
+    "status": "Em desenvolvimento"
   },
   {
     "id": 3,
@@ -43,22 +48,44 @@
       "PostgreSQL"
     ],
     "stack": "Full Stack",
-    "year": 2022,
+    "period": {
+      "start": 2022,
+      "end": 2022
+    },
     "status": "Concluído"
   },
   {
     "id": 4,
-    "title": "CRONOS",
-    "description": "Este projeto foi desenvolvido para auxiliar meu dia a dia como N1 e, ao mesmo tempo, servir como prática em Java. A aplicação em terminal permite cadastrar tarefas e controlar o tempo de trabalho de forma simples e eficiente. O foco está na funcionalidade, oferecendo uma interface direta e prática que atende às necessidades diárias enquanto fortalece minhas habilidades de programação.",
-    "link": "https://github.com/GKsegura/CRONOS",
-    "image": "/assets/cronos.png",
+    "title": "CRONOS API",
+    "description": "CRONOS API é a evolução do projeto CRONOS original, agora estruturado como uma API REST para gerenciamento de tarefas e controle de tempo de trabalho. O backend foi desenvolvido em Java com foco em organização, separação de responsabilidades e boas práticas, servindo como base para integração com aplicações frontend. O projeto também representa minha transição de aplicações em terminal para arquiteturas mais modernas e escaláveis.",
+    "link": "https://github.com/GKsegura/CRONOS-API",
+    "image": "/assets/cronos-api.png",
     "languages": [
       "Java",
       "Maven",
       "SQLite"
     ],
     "stack": "Back-end",
-    "year": 2025,
+    "period": {
+      "start": 2025
+    },
+    "status": "Em desenvolvimento"
+  },
+  {
+    "id": 5,
+    "title": "CRONOS APP",
+    "description": "CRONOS APP é a interface frontend do sistema CRONOS, desenvolvida para consumir a CRONOS API e oferecer uma experiência visual mais amigável e intuitiva para o gerenciamento de tarefas e controle de tempo. O projeto foca em componentização, organização de estados e clareza na interface, transformando uma ferramenta técnica em uma aplicação prática para uso diário.",
+    "link": "https://github.com/GKsegura/CRONOS-APP",
+    "image": "/assets/cronos-app.png",
+    "languages": [
+      "React",
+      "JavaScript",
+      "CSS"
+    ],
+    "stack": "Front-end",
+    "period": {
+      "start": 2026
+    },
     "status": "Em desenvolvimento"
   }
 ]

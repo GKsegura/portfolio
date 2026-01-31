@@ -1,4 +1,5 @@
 import languages from '../../../../../data/languages.json';
+import { formatPeriod } from '../../../../../utils/date';
 import styles from './ProjetoCard.module.css';
 
 const getStackEmoji = (stack) => {
@@ -17,7 +18,11 @@ const ProjetoCard = ({ projeto, onVerMais }) => {
             <div className={styles.projetoConteudo}>
                 <div className={styles.mediaSection}>
                     <img src={projeto.image} alt={projeto.title} className={styles.projetoImage} />
-                    {projeto.year && <small className={styles.year}>Desenvolvido em: {projeto.year}</small>}
+                    {projeto.period && (
+                        <small className={styles.year}>
+                            {formatPeriod(projeto.period, projeto.status)}
+                        </small>
+                    )}
                     <ul className={styles.languages}>
                         {projeto.languages.map((tec, index) => {
                             const normalizedKey = tec.toLowerCase().replace(/\s+/g, '');
