@@ -6,9 +6,6 @@ import Modal from './Modal';
 import ProjetoCard from './ProjetoCard';
 import styles from './Projetos.module.css';
 
-
-
-
 const Projetos = () => {
     const [selectedProjeto, setSelectedProjeto] = useState(null);
 
