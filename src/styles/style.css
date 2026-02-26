@@ -16,18 +16,35 @@ body {
     background-color: var(--color-bg);
     color: var(--color-text);
     background-image:
-        radial-gradient(circle at 15% 20%, var(--gradient-1) 0px, transparent 45%),
-        radial-gradient(circle at 85% 75%, var(--gradient-2) 0px, transparent 50%),
-        radial-gradient(circle at 50% 50%, var(--gradient-3) 0px, transparent 60%),
-        radial-gradient(circle at 40% 90%, var(--gradient-4) 0px, transparent 40%);
+        radial-gradient(ellipse at 15% 20%, var(--gradient-1) 0px, transparent 40%),
+        radial-gradient(ellipse at 85% 70%, var(--gradient-2) 0px, transparent 45%),
+        radial-gradient(ellipse at 55% 55%, var(--gradient-3) 0px, transparent 55%),
+        radial-gradient(ellipse at 35% 95%, var(--gradient-4) 0px, transparent 35%);
     background-repeat: no-repeat;
-    background-size: cover;
     background-attachment: fixed;
     line-height: 1.6;
     min-height: 100vh;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     cursor: default;
+    animation: bg-shift 20s ease-in-out infinite alternate;
+}
+
+/* Fix background-attachment: fixed no iOS Safari */
+@supports (-webkit-touch-callout: none) {
+    body {
+        background-attachment: scroll;
+    }
+}
+
+@keyframes bg-shift {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 3% 5%;
+    }
 }
 
 /* Utility Classes */
@@ -110,6 +127,7 @@ h3 {
 ::-webkit-scrollbar-thumb {
     background: var(--color-primary);
     border-radius: 5px;
+    border: 2px solid var(--color-bg);
 }
 
 ::-webkit-scrollbar-thumb:hover {
