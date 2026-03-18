@@ -92,7 +92,7 @@
     "id": 6,
     "title": "Workshop Spring Boot JPA",
     "description": "API RESTful de um sistema de pedidos desenvolvida com Spring Boot, JPA/Hibernate e PostgreSQL. O projeto implementa um modelo de domínio completo com usuários, pedidos, produtos, categorias e pagamentos, seguindo uma arquitetura em camadas (Resource → Service → Repository). Inclui CRUD completo, tratamento de exceções personalizado, perfis de ambiente separados para teste e produção, e documentação interativa com Swagger/OpenAPI.",
-    "link": "https://github.com/GKsegura/course",
+    "link": "https://github.com/GKsegura/springboot-jpa",
     "image": "/assets/springbootjpa.png",
     "languages": [
       "Java",
