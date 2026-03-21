@@ -22,6 +22,11 @@ const Sobre = () => {
                         <h1>
                             Olá, eu sou o <span className={styles.highlight}>{sobreData.intro.nome}</span>
                         </h1>
+
+                        {sobreData.intro.subtitulo && (
+                            <p className={styles.subtitulo}>{sobreData.intro.subtitulo}</p>
+                        )}
+
                         <div className={styles.description}>
                             {sobreData.intro.paragrafos
                                 .filter(p => p.visivel || showMore)
@@ -31,7 +36,7 @@ const Sobre = () => {
 
                             <p>
                                 {sobreData.intro.cta.texto}
-                                <strong>{sobreData.intro.cta.destaque}</strong>
+                                {sobreData.intro.cta.destaque && <strong>{sobreData.intro.cta.destaque}</strong>}
                                 {sobreData.intro.cta.textoContinuacao}
                                 <span className={styles.cta}>
                                     <a href={sobreData.intro.cta.linkHref}>
@@ -68,6 +73,7 @@ const Sobre = () => {
                     {sobreData.tecnologias.lista.map(tech => (
                         <li key={tech.nome}>
                             <img src={`${urlTechnologies}${tech.icone}`} alt={tech.nome} />
+                            <span className={styles.techNome}>{tech.nome}</span>
                         </li>
                     ))}
                 </ul>

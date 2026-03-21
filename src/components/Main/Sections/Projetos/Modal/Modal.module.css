@@ -68,7 +68,6 @@
     border-radius: 10px;
     transition: box-shadow 0.3s ease;
     border: 1px solid transparent;
-
     width: 100%;
 }
 
@@ -152,6 +151,18 @@
     background-color: rgba(220, 20, 60, 0.15);
     color: #DC143C;
     border-color: #DC143C88;
+}
+
+.emusoativo {
+    background-color: rgba(0, 128, 0, 0.15);
+    color: #008000;
+    border-color: #00800088;
+}
+
+.emevolução {
+    background-color: rgba(100, 100, 255, 0.15);
+    color: #6060cc;
+    border-color: #6060cc88;
 }
 
 .right {

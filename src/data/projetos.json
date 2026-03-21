@@ -2,7 +2,8 @@
   {
     "id": 1,
     "title": "QInvest",
-    "description": "QInvest é uma aplicação web fullstack desenvolvida como Trabalho de Conclusão de Curso (TCC) do Técnico em Informática (2023). O projeto tem como objetivo auxiliar no controle e planejamento de investimentos financeiros, oferecendo uma interface moderna e funcional. \n Atuei como líder técnico do grupo, sendo responsável pelas principais decisões arquiteturais, organização do time e integração das tecnologias. Além disso, participei ativamente como desenvolvedor full stack, construindo tanto a estrutura de backend (Laravel) quanto o frontend (Vite).",
+    "shortDescription": "Plataforma de educação financeira desenvolvida como TCC no CTI — Unesp Bauru. Atuei como líder técnico e desenvolvedor full-stack.",
+    "description": "QInvest é uma aplicação web fullstack desenvolvida como Trabalho de Conclusão de Curso (TCC) do Técnico em Informática no CTI — Colégio Técnico Industrial da Unesp Bauru (2023).\n\nO projeto tem como objetivo auxiliar no controle e planejamento de investimentos financeiros, oferecendo uma interface moderna e funcional.\n\nAtuei como líder técnico do grupo, sendo responsável pelas principais decisões arquiteturais, organização do time e integração das tecnologias. Além disso, participei ativamente como desenvolvedor full-stack, construindo tanto o backend (Laravel) quanto o frontend (Vite).",
     "link": "https://github.com/GKsegura/qinvest-web",
     "image": "/assets/qinvest.png",
     "languages": [
@@ -21,7 +22,8 @@
   {
     "id": 2,
     "title": "Portfólio",
-    "description": "Este repositório serve como portfólio principal de projetos desenvolvidos por mim.\nAqui você encontra aplicações web completas, APIs RESTful e experimentações que demonstram minha evolução como desenvolvedor.\nMeus projetos são focados em boas práticas de código, clareza arquitetural e, sempre que possível, uma pitada de criatividade.",
+    "shortDescription": "Este portfólio que você está navegando agora. Construído com React, Vite e CSS Modules — em constante evolução.",
+    "description": "Este repositório serve como portfólio principal de projetos desenvolvidos por mim.\n\nAqui você encontra aplicações web completas, APIs RESTful e experimentações que demonstram minha evolução como desenvolvedor.\n\nMeus projetos são focados em boas práticas de código, clareza arquitetural e, sempre que possível, uma pitada de criatividade.",
     "link": "https://github.com/GKsegura/repositorio-gksegura",
     "image": "/assets/repositorio.png",
     "languages": [
@@ -33,12 +35,13 @@
     "period": {
       "start": 2025
     },
-    "status": "Em desenvolvimento"
+    "status": "Em evolução"
   },
   {
     "id": 3,
     "title": "EcoTube",
-    "description": "EcoTube é um e-commerce de canudos de vidro sustentáveis, criado com o objetivo de promover o consumo consciente através da tecnologia.\nA plataforma permite a navegação por produtos, exibição de detalhes, adição ao carrinho e simula a jornada de compra de forma intuitiva.\nO projeto foi desenvolvido com foco na usabilidade, componentização e um visual limpo e funcional — alinhando propósito ecológico e boa experiência do usuário.",
+    "shortDescription": "E-commerce de canudos de vidro sustentáveis com catálogo, carrinho e simulação de checkout. Foco em usabilidade e consumo consciente.",
+    "description": "EcoTube é um e-commerce de canudos de vidro sustentáveis, criado com o objetivo de promover o consumo consciente através da tecnologia.\n\nA plataforma permite a navegação por produtos, exibição de detalhes, adição ao carrinho e simula a jornada de compra de forma intuitiva.\n\nO projeto foi desenvolvido com foco na usabilidade, componentização e um visual limpo e funcional — alinhando propósito ecológico e boa experiência do usuário.",
     "link": "https://github.com/GKsegura/EcoTube",
     "image": "/assets/ecotube.png",
     "languages": [
@@ -57,7 +60,8 @@
   {
     "id": 4,
     "title": "CRONOS API",
-    "description": "CRONOS API é a evolução do projeto CRONOS original, agora estruturado como uma API REST para gerenciamento de tarefas e controle de tempo de trabalho. O backend foi desenvolvido em Java com foco em organização, separação de responsabilidades e boas práticas, servindo como base para integração com aplicações frontend. O projeto também representa minha transição de aplicações em terminal para arquiteturas mais modernas e escaláveis.",
+    "shortDescription": "API REST para gerenciamento de tarefas e controle de tempo, usada no meu dia a dia como Analista de Suporte na Nexum Tecnologia.",
+    "description": "CRONOS API é a evolução do projeto CRONOS original, agora estruturado como uma API REST para gerenciamento de tarefas e controle de tempo de trabalho.\n\nO backend foi desenvolvido em Java com foco em organização, separação de responsabilidades e boas práticas, servindo como base para integração com a CRONOS APP.\n\nO projeto também representa minha transição de aplicações em terminal para arquiteturas mais modernas e escaláveis — e está em uso ativo no meu trabalho.",
     "link": "https://github.com/GKsegura/CRONOS-API",
     "image": "/assets/cronos-api.png",
     "languages": [
@@ -69,12 +73,13 @@
     "period": {
       "start": 2025
     },
-    "status": "Em desenvolvimento"
+    "status": "Em uso ativo"
   },
   {
     "id": 5,
     "title": "CRONOS APP",
-    "description": "CRONOS APP é a interface frontend do sistema CRONOS, desenvolvida para consumir a CRONOS API e oferecer uma experiência visual mais amigável e intuitiva para o gerenciamento de tarefas e controle de tempo. O projeto foca em componentização, organização de estados e clareza na interface, transformando uma ferramenta técnica em uma aplicação prática para uso diário.",
+    "shortDescription": "Interface frontend do sistema CRONOS, consumindo a CRONOS API para gerenciar tarefas e controle de tempo no dia a dia.",
+    "description": "CRONOS APP é a interface frontend do sistema CRONOS, desenvolvida para consumir a CRONOS API e oferecer uma experiência visual amigável para o gerenciamento de tarefas e controle de tempo.\n\nO projeto foca em componentização, organização de estados e clareza na interface, transformando uma ferramenta técnica em uma aplicação prática de uso diário.\n\nUtilizado ativamente na Nexum Tecnologia como ferramenta de suporte ao meu trabalho como Analista.",
     "link": "https://github.com/GKsegura/CRONOS-APP",
     "image": "/assets/cronos-app.png",
     "languages": [
@@ -86,12 +91,13 @@
     "period": {
       "start": 2026
     },
-    "status": "Em desenvolvimento"
+    "status": "Em uso ativo"
   },
   {
     "id": 6,
     "title": "Workshop Spring Boot JPA",
-    "description": "API RESTful de um sistema de pedidos desenvolvida com Spring Boot, JPA/Hibernate e PostgreSQL. O projeto implementa um modelo de domínio completo com usuários, pedidos, produtos, categorias e pagamentos, seguindo uma arquitetura em camadas (Resource → Service → Repository). Inclui CRUD completo, tratamento de exceções personalizado, perfis de ambiente separados para teste e produção, e documentação interativa com Swagger/OpenAPI.",
+    "shortDescription": "API RESTful de sistema de pedidos com Spring Boot, JPA/Hibernate e PostgreSQL — demonstração de domínio do ecossistema Java back-end.",
+    "description": "API RESTful de um sistema de pedidos desenvolvida com Spring Boot, JPA/Hibernate e PostgreSQL.\n\nO projeto implementa um modelo de domínio completo com usuários, pedidos, produtos, categorias e pagamentos, seguindo uma arquitetura em camadas (Resource → Service → Repository).\n\nInclui CRUD completo, tratamento de exceções personalizado, perfis de ambiente separados para teste e produção, e documentação interativa com Swagger/OpenAPI.",
     "link": "https://github.com/GKsegura/springboot-jpa",
     "image": "/assets/springbootjpa.png",
     "languages": [

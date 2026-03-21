@@ -124,6 +124,18 @@
     border-color: #DC143C33;
 }
 
+.emusoativo {
+    background-color: rgba(0, 128, 0, 0.1);
+    color: #008000;
+    border-color: #00800033;
+}
+
+.emevolução {
+    background-color: rgba(100, 100, 255, 0.1);
+    color: #6060cc;
+    border-color: #6060cc33;
+}
+
 .contentSection {
     flex: 1;
     display: flex;
@@ -219,6 +231,14 @@
 .verMaisButton:focus {
     outline: none;
     box-shadow: 0 0 0 3px rgba(179, 136, 255, 0.6);
+}
+
+.shortDescription {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--color-text-muted);
+    text-align: left;
+    margin-bottom: 0.5rem;
 }
 
 

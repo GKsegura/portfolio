@@ -42,6 +42,9 @@ const ProjetoCard = ({ projeto, onVerMais }) => {
                     )}
                 </div>
                 <div className={styles.contentSection}>
+                    {projeto.shortDescription && (
+                        <p className={styles.shortDescription}>{projeto.shortDescription}</p>
+                    )}
                     <div className={styles.stackContainer}>
                         {projeto.stack && (
                             <span className={styles.stack}>
@@ -51,7 +54,7 @@ const ProjetoCard = ({ projeto, onVerMais }) => {
                     </div>
                     <div className={styles.linkContainer}>
                         <button
-                            className={styles.link}
+                            className={styles.verMaisButton}
                             onClick={(e) => {
                                 e.stopPropagation();
                                 onVerMais();

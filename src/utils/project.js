@@ -1,7 +1,9 @@
 const statusPriority = {
-    'Em desenvolvimento': 1,
-    'Concluído': 2,
-    'Pausado': 3
+    'Em uso ativo': 1,
+    'Em desenvolvimento': 2,
+    'Concluído': 3,
+    'Em evolução': 4,
+    'Pausado': 5
 };
 
 const getRelevantYear = (projeto) => {
@@ -14,19 +16,19 @@ const getRelevantYear = (projeto) => {
 
 const sortProjetos = (projetos) => {
     return [...projetos].sort((a, b) => {
-        //prioridade por status
+        // prioridade por status
         const statusDiff =
             statusPriority[a.status] - statusPriority[b.status];
 
         if (statusDiff !== 0) return statusDiff;
 
-        //ano mais recente primeiro
+        // ano mais recente primeiro
         const yearA = getRelevantYear(a) ?? 0;
         const yearB = getRelevantYear(b) ?? 0;
 
         if (yearB !== yearA) return yearB - yearA;
 
-        //fallback alfabético
+        // fallback alfabético
         return a.title.localeCompare(b.title);
     });
 };
@@ -41,4 +43,3 @@ const getStackEmoji = (stack) => {
 };
 
 export { getStackEmoji, sortProjetos };
-

@@ -2,47 +2,43 @@
     "intro": {
         "nome": "José Segura",
         "titulo": "Desenvolvedor Full-Stack",
+        "subtitulo": "Especialista em Java, React e automações - construo sistemas que economizam tempo e escalam.",
         "paragrafos": [
             {
-                "id": 1,
-                "texto": "<strong>Desenvolvedor Full-Stack</strong> com experiência prática em <strong>Java, JavaScript, MySQL e React</strong>.",
-                "visivel": true
-            },
-            {
                 "id": 2,
-                "texto": "Atualmente atuo como <strong>Analista de Suporte</strong> na <strong>Nexum Tecnologia</strong>, onde trabalho com <strong>BPM, automações através de robôs e integrações em Java</strong>. Utilizo <strong>JavaScript no desenvolvimento de processos</strong> e a <strong>plataforma Lecom</strong> para não apenas implementar tecnologias, mas entregar performance real aos clientes.",
+                "texto": "Atuo como <strong>Analista de Suporte</strong> na <strong>Nexum Tecnologia</strong>, desenvolvendo automações com BPM, robôs e integrações Java — entregando performance real aos clientes.",
                 "visivel": true
             },
             {
                 "id": 3,
-                "texto": "Já desenvolvi <strong>e-commerces, plataformas de investimentos e dashboards</strong>, com integração de APIs e <strong>dados em tempo real</strong>.",
+                "texto": "Já entreguei e-commerces, plataformas de investimentos e dashboards com integração de APIs e dados em tempo real. Confira tudo no meu <a href=\"https://github.com/GKsegura\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a>.",
                 "visivel": true
             },
             {
                 "id": 4,
-                "texto": "Estou aprofundando meus conhecimentos em <strong>Java e MySQL</strong>, focando no desenvolvimento back-end para criar aplicações <strong>robustas, escaláveis e performáticas</strong>.",
+                "texto": "Estou aprofundando meus conhecimentos em <strong>Java e MySQL</strong>, focando no back-end para criar aplicações robustas, escaláveis e performáticas.",
                 "visivel": false
             },
             {
                 "id": 5,
-                "texto": "Sou movido por <strong>resolver problemas, aprender constantemente e transformar desafios em soluções práticas</strong>. Para mim, tecnologia vai além de código — é a ponte entre ideias e resultados concretos.",
+                "texto": "Sou movido por resolver problemas reais e transformar desafios em soluções práticas. Para mim, tecnologia vai além de código — é a ponte entre ideias e resultados concretos.",
                 "visivel": false
             },
             {
                 "id": 6,
-                "texto": "Tenho facilidade em <strong>trabalhar em equipe, encarar desafios complexos e aplicar criatividade em cada projeto</strong>. Prezo por <strong>código limpo, boas práticas e ver ideias saindo do papel e ganhando vida</strong>.",
+                "texto": "Tenho facilidade em trabalhar em equipe, encarar desafios complexos e aplicar criatividade em cada projeto. Prezo por código limpo, boas práticas e ver ideias saindo do papel.",
                 "visivel": false
             }
         ],
         "cta": {
-            "texto": "O que realmente me impulsiona é o ",
-            "destaque": "desenvolvimento web",
-            "textoContinuacao": ". Se você tem um projeto, uma ideia ou quer turbinar seu sistema, ",
+            "texto": "Se você tem um projeto, uma ideia ou quer turbinar seu sistema, ",
+            "destaque": "",
+            "textoContinuacao": "",
             "linkTexto": "me chama e vamos construir algo incrível juntos!",
             "linkHref": "#contato"
         },
         "curriculo": {
-            "texto": "Além disso, você pode baixar o ",
+            "texto": "Você também pode baixar o ",
             "linkTexto": "meu currículo",
             "linkHref": "/CVJoseSegura.pdf"
         }
@@ -69,7 +65,7 @@
         ]
     },
     "botoes": {
-        "verMais": "Ver mais ▼",
-        "verMenos": "Ver menos ▲"
+        "verMais": "Ler mais ▼",
+        "verMenos": "Ler menos ▲"
     }
 }
