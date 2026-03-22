@@ -47,6 +47,19 @@ body {
     }
 }
 
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition:
+        opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0s),
+        transform 0.65s cubic-bezier(0.16, 1, 0.3, 1) var(--reveal-delay, 0s);
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Utility Classes */
 .glass {
     background: var(--color-surface);
