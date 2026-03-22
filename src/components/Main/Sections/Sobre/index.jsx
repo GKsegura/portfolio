@@ -1,5 +1,5 @@
+import { useScrollAnimation } from '@/hooks/Usescrollanimation'
 import sobreData from '@data/sobre.json'
-import { useScrollAnimation } from '@hooks/Usescrollanimation'
 import { useState } from 'react'
 import styles from './Sobre.module.css'
 

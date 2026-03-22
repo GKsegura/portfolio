@@ -1,4 +1,4 @@
-import { useScrollAnimation } from '@hooks/Usescrollanimation'
+import { useScrollAnimation } from '@/hooks/Usescrollanimation'
 import { FaEnvelope, FaWhatsapp } from 'react-icons/fa'
 import styles from './Contato.module.css'
 
