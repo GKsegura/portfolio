@@ -1,7 +1,7 @@
-import styles from './Main.module.css';
-import Contato from './Sections/Contato';
-import Projetos from './Sections/Projetos';
-import Sobre from './Sections/Sobre';
+import Contato from '@components/Main/Sections/Contato'
+import Projetos from '@components/Main/Sections/Projetos'
+import Sobre from '@components/Main/Sections/Sobre'
+import styles from './Main.module.css'
 
 export default function Main() {
     return (
@@ -10,5 +10,5 @@ export default function Main() {
             <Projetos />
             <Contato />
         </main>
-    );
+    )
 }

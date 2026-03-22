@@ -127,17 +127,35 @@
     padding: 2rem;
     text-align: center;
 
+    /* Título com linhas decorativas dos dois lados */
     h1 {
         font-size: 2rem;
         margin-bottom: 1rem;
         color: var(--color-primary);
-    }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
 
-    .description {
-        font-size: 1.1rem;
-        margin-bottom: 2rem;
-        line-height: 1.6;
-        text-align: center;
+        &::before,
+        &::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(to var(--dir, right),
+                    transparent,
+                    var(--color-primary));
+            max-width: 80px;
+            opacity: 0.5;
+        }
+
+        &::before {
+            --dir: right;
+        }
+
+        &::after {
+            --dir: left;
+        }
     }
 
     .tecnologiasContainer {

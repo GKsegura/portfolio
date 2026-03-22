@@ -1,19 +1,21 @@
-import { useState } from 'react';
-import sobreData from '../../../../data/sobre.json';
-import styles from './Sobre.module.css';
+import sobreData from '@data/sobre.json'
+import { useScrollAnimation } from '@hooks/Usescrollanimation'
+import { useState } from 'react'
+import styles from './Sobre.module.css'
 
-const urlTechnologies = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/';
+const urlTechnologies = 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/'
 
 const Sobre = () => {
-    const [showMore, setShowMore] = useState(false);
+    const [showMore, setShowMore] = useState(false)
 
-    const toggleShowMore = () => {
-        setShowMore(!showMore);
-    };
+    const introRef = useScrollAnimation({ threshold: 0.05 })
+    const techRef = useScrollAnimation({ threshold: 0.05 })
+
+    const toggleShowMore = () => setShowMore(!showMore)
 
     return (
         <>
-            <section className={styles.intro} id="sobre">
+            <section ref={introRef} className={`${styles.intro} reveal`} id="sobre">
                 <div className={styles.introContainer}>
                     <div className={styles.imgDev}>
                         <img src="https://github.com/GKsegura.png" alt="Foto de perfil do José Segura" />
@@ -36,7 +38,9 @@ const Sobre = () => {
 
                             <p>
                                 {sobreData.intro.cta.texto}
-                                {sobreData.intro.cta.destaque && <strong>{sobreData.intro.cta.destaque}</strong>}
+                                {sobreData.intro.cta.destaque && (
+                                    <strong>{sobreData.intro.cta.destaque}</strong>
+                                )}
                                 {sobreData.intro.cta.textoContinuacao}
                                 <span className={styles.cta}>
                                     <a href={sobreData.intro.cta.linkHref}>
@@ -67,7 +71,7 @@ const Sobre = () => {
                 </div>
             </section>
 
-            <section className={styles.tecnologias} id='tecnologias'>
+            <section ref={techRef} className={`${styles.tecnologias} reveal`} id='tecnologias'>
                 <h1>{sobreData.tecnologias.titulo}</h1>
                 <ul className={styles.tecnologiasContainer}>
                     {sobreData.tecnologias.lista.map(tech => (
@@ -79,7 +83,7 @@ const Sobre = () => {
                 </ul>
             </section>
         </>
-    );
-};
+    )
+}
 
-export default Sobre;
+export default Sobre

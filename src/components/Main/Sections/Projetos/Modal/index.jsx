@@ -1,38 +1,61 @@
-import React from 'react';
-import { FaGithub, FaTimes } from 'react-icons/fa';
-import { formatPeriod } from '../../../../../utils/date';
-import { getStackEmoji } from '../../../../../utils/project';
-import styles from './Modal.module.css';
+import { formatPeriod } from '@utils/date'
+import { getStackEmoji } from '@utils/project'
+import React, { useEffect } from 'react'
+import ReactDOM from 'react-dom'
+import { FaGithub, FaTimes } from 'react-icons/fa'
+import styles from './Modal.module.css'
 
 const Modal = ({ projeto, onClose, languages }) => {
-    return (
+    // Fecha com Escape
+    useEffect(() => {
+        const handleKeyDown = (e) => { if (e.key === 'Escape') onClose() }
+        document.addEventListener('keydown', handleKeyDown)
+        return () => document.removeEventListener('keydown', handleKeyDown)
+    }, [onClose])
+
+    // Trava scroll do body
+    useEffect(() => {
+        document.body.style.overflow = 'hidden'
+        return () => { document.body.style.overflow = '' }
+    }, [])
+
+    const content = (
         <div className={styles.overlay} onClick={onClose}>
-            <div className={styles.projeto} onClick={e => e.stopPropagation()}>
-                <button
-                    className={styles.closeButton}
-                    onClick={onClose}
-                    aria-label="Fechar modal"
-                >
-                    <FaTimes size={20} />
-                </button>
-                <h3>{projeto.title}</h3>
+            <div className={styles.modal} onClick={e => e.stopPropagation()}>
 
-                <div className={styles.projetoConteudo}>
+                {/* Cabeçalho: título centralizado + botão fechar */}
+                <div className={styles.header}>
+                    <h3>{projeto.title}</h3>
+                    <button
+                        className={styles.closeButton}
+                        onClick={onClose}
+                        aria-label="Fechar modal"
+                    >
+                        <FaTimes size={18} />
+                    </button>
+                </div>
 
-                    {/* LADO ESQUERDO */}
+                {/* Corpo em duas colunas */}
+                <div className={styles.conteudo}>
+
+                    {/* Coluna esquerda */}
                     <div className={styles.left}>
-                        <img src={projeto.image} alt={projeto.title} className={styles.projetoImage} />
+                        <img
+                            src={projeto.image}
+                            alt={projeto.title}
+                            className={styles.imagem}
+                        />
 
                         {projeto.period && (
-                            <small className={styles.year}>
+                            <small className={styles.period}>
                                 {formatPeriod(projeto.period, projeto.status)}
                             </small>
                         )}
 
                         <ul className={styles.languages}>
                             {projeto.languages.map((tec, index) => {
-                                const key = tec.toLowerCase().replace(/\s+/g, '');
-                                const iconUrl = languages[key];
+                                const key = tec.toLowerCase().replace(/\s+/g, '')
+                                const iconUrl = languages[key]
                                 return (
                                     <li key={index}>
                                         {iconUrl && (
@@ -44,7 +67,7 @@ const Modal = ({ projeto, onClose, languages }) => {
                                         )}
                                         {tec}
                                     </li>
-                                );
+                                )
                             })}
                         </ul>
 
@@ -55,23 +78,21 @@ const Modal = ({ projeto, onClose, languages }) => {
                         )}
                     </div>
 
-                    {/* LADO DIREITO */}
+                    {/* Coluna direita */}
                     <div className={styles.right}>
                         <p>
                             {projeto.description.split('\n').map((line, i) => (
-                                <React.Fragment key={i}>
-                                    {line}
-                                    <br />
-                                </React.Fragment>
+                                <React.Fragment key={i}>{line}<br /></React.Fragment>
                             ))}
                         </p>
-                        <div className={styles.stackContainer}>
-                            {projeto.stack && (
+
+                        {projeto.stack && (
+                            <div className={styles.stackContainer}>
                                 <span className={styles.stack}>
                                     <strong>{getStackEmoji(projeto.stack)} Stack:</strong> {projeto.stack}
                                 </span>
-                            )}
-                        </div>
+                            </div>
+                        )}
 
                         <div className={styles.linkContainer}>
                             <a
@@ -80,15 +101,17 @@ const Modal = ({ projeto, onClose, languages }) => {
                                 rel="noopener noreferrer"
                                 className={styles.link}
                             >
-                                <FaGithub className={styles.icon} />
-                                Ver projeto
+                                <FaGithub size={16} />
+                                Ver projeto no GitHub
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    );
-};
+    )
 
-export default Modal;
+    return ReactDOM.createPortal(content, document.body)
+}
+
+export default Modal

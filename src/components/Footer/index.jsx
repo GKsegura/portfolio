@@ -1,5 +1,5 @@
-import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import styles from './Footer.module.css';
+import { FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import styles from './Footer.module.css'
 
 export default function Footer() {
     return (
@@ -25,5 +25,5 @@ export default function Footer() {
                 </a>
             </div>
         </footer>
-    );
+    )
 }
