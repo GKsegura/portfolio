@@ -8,6 +8,8 @@ import styles from './ProjetoCard.module.css'
 const ProjetoCard = ({ projeto, onVerMais, animationDelay = 0 }) => {
     const cardRef = useScrollAnimation({ threshold: 0.08 })
 
+    const DEFAULT_IMAGE = '/assets/default-project.svg';
+
     return (
         <div
             ref={cardRef}
