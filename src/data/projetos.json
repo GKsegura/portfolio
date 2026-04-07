@@ -113,5 +113,21 @@
       "end": 2026
     },
     "status": "Concluído"
+  },
+  {
+    "id": 7,
+    "title": "Chess System",
+    "shortDescription": "Sistema de jogo de xadrez em desenvolvimento, com foco em lógica complexa e aplicação prática de POO em Java.",
+    "description": "Chess System é uma aplicação de terminal desenvolvida em Java durante o curso de Programação Orientada a Objetos do Nelio Alves.\n\nO projeto tem como objetivo implementar um sistema completo de jogo de xadrez, explorando regras oficiais e uma lógica de domínio mais avançada.\n\nAtualmente em desenvolvimento, a aplicação já contempla conceitos fundamentais como encapsulamento, herança, polimorfismo, tratamento de exceções e organização em camadas.\n\nEste projeto está sendo essencial para consolidar minha base em orientação a objetos e fortalecer minha capacidade de modelar regras de negócio mais complexas.",
+    "link": "https://github.com/GKsegura/chess-system",
+    "image": "/assets/chess-system.png",
+    "languages": [
+      "Java"
+    ],
+    "stack": "Back-end",
+    "period": {
+      "start": 2026
+    },
+    "status": "Em desenvolvimento"
   }
 ]
