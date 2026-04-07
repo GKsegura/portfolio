@@ -23,7 +23,12 @@ const ProjetoCard = ({ projeto, onVerMais, animationDelay = 0 }) => {
 
             <div className={styles.projetoConteudo}>
                 <div className={styles.mediaSection}>
-                    <img src={projeto.image} alt={projeto.title} className={styles.projetoImage} />
+                    <img
+                        src={projeto.image || DEFAULT_IMAGE}
+                        alt={projeto.title}
+                        className={styles.projetoImage}
+                        onError={(e) => { e.target.src = DEFAULT_IMAGE; }}
+                    />
 
                     {projeto.period && (
                         <small className={styles.year}>

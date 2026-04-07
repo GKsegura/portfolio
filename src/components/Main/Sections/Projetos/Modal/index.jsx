@@ -6,14 +6,15 @@ import { FaGithub, FaTimes } from 'react-icons/fa'
 import styles from './Modal.module.css'
 
 const Modal = ({ projeto, onClose, languages }) => {
-    // Fecha com Escape
+
+    const DEFAULT_IMAGE = '/assets/default-project.svg';
+
     useEffect(() => {
         const handleKeyDown = (e) => { if (e.key === 'Escape') onClose() }
         document.addEventListener('keydown', handleKeyDown)
         return () => document.removeEventListener('keydown', handleKeyDown)
     }, [onClose])
 
-    // Trava scroll do body
     useEffect(() => {
         document.body.style.overflow = 'hidden'
         return () => { document.body.style.overflow = '' }
@@ -35,15 +36,14 @@ const Modal = ({ projeto, onClose, languages }) => {
                     </button>
                 </div>
 
-                {/* Corpo em duas colunas */}
                 <div className={styles.conteudo}>
 
-                    {/* Coluna esquerda */}
                     <div className={styles.left}>
                         <img
-                            src={projeto.image}
+                            src={projeto.image || DEFAULT_IMAGE}
                             alt={projeto.title}
                             className={styles.imagem}
+                            onError={(e) => { e.target.src = DEFAULT_IMAGE; }}
                         />
 
                         {projeto.period && (
@@ -78,7 +78,6 @@ const Modal = ({ projeto, onClose, languages }) => {
                         )}
                     </div>
 
-                    {/* Coluna direita */}
                     <div className={styles.right}>
                         <p>
                             {projeto.description.split('\n').map((line, i) => (
